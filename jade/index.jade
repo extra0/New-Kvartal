@@ -1,0 +1,13 @@
+extends _layout
+block content
+	.main__content
+		.video__block
+			.video__wrap
+			video.video__play(loop autoplay)
+				source(src="video/video2.mp4" type="video/mp4")
+				source(src="video/video2.webm" type="video/webm")
+				source(src="video/video2.ogg" type="video/ogg")
+		.container
+			.row
+				.phone__block.col-xs-8
+					img.phone__operator(src="img/ava.png", alt="")

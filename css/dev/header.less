@@ -1,0 +1,27 @@
+.header {
+	background: url(../img/header_bg.png) top no-repeat;
+	// логотип
+	&__logo {
+		position: relative;
+		z-index: 2;
+	}
+	// меню в хедере
+	&__menu {
+		display: inline-block;
+		margin: 11px -8px 0 25px!important;
+		vertical-align: top;
+	}
+	&__menu-link {
+		color: #fff;
+		text-transform: uppercase;
+		font-family: 'Roboto Black';
+		padding: 5px 6px;
+		display: inline-block;
+		border-radius: 3px;
+		&:hover {
+			color: #fff;
+			background: rgba(0, 0, 0, 0.44);
+			text-decoration: none;
+		}
+	}
+}
