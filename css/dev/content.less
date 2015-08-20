@@ -1,7 +1,7 @@
 // видео блок
 .full__screen {
 	position: relative;
-	height: 100vh;
+	// height: 100vh;
 }
 .video {
 	&__block {
@@ -15,7 +15,8 @@
 	&__wrap {
 		position: absolute;
 	    width: 100%;
-	    height: 100vh;
+	    height: 100%;
+	   	margin-bottom: -5px;
 	    background: url(../img/shadow.png) 0px -90px repeat-x;
 	    background-color: rgba(21,49,65,0.46)
 	}
@@ -45,7 +46,7 @@
 	&__inner {
 		display: inline-block;
 		vertical-align: top;
-		margin: 3px 35px 0 26px;
+		margin: 3px 26px 0 26px;
 		letter-spacing: -1px;
 	}
 	&__number {
@@ -54,6 +55,7 @@
 		font-size: 26px;
 		font-family: 'Roboto Light';
 		margin: -4px 0 1px 0;
+		letter-spacing: 0;
 	}
 	&__sufix {
 		font-family: 'Roboto Medium';
@@ -113,18 +115,18 @@
 }
 // кнопка спуска вниз 
 .button__down {
-	// position: absolute;
-	// bottom: 90px;
+	
 }
 // блок с обьектами
 .object {
 	&__block {
 		position: relative;
-		padding-top: 80px;
+		padding-top: 38px;
 	}
 	&__map {
 		position: relative;
-		margin-top: -167px;
+		margin-top: -126px;
+		margin-left: 8px;
 	}
 	&__point {
 		position: absolute;
@@ -165,7 +167,6 @@
 		}
 	}
 	&__link {
-		&:focus,
 		&:hover {
 			text-decoration: none;
 		}
@@ -361,7 +362,6 @@
 		line-height: 24px;
 	}
 	&__inner-link {
-		color: #2884be;
 		font-size: 20px;
 		font-family: 'Roboto Bold';
 		line-height: 20px;
@@ -371,5 +371,67 @@
 		&:hover {
 			text-decoration: none;
 		}
+	}
+}
+// о нашйе кампании
+.about {
+	&__block {
+		margin: -72px 0 0 0;
+		.title {
+			margin-bottom: 44px;
+		}
+	}
+	&__price {
+		margin: 140px 0 50px 0;
+	}
+	&__news {
+		float: right;
+		margin: 126px 0 50px 0;
+	}
+	&__center {
+		margin: 0 60px 83px 33px;
+	}
+	&__img {
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	&__price-link {
+		font-size: 66%;
+		border-bottom: 1px solid;
+		&:hover {
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+	&__text {
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0px 0px 30px 0;
+	}
+	&__link {
+		display: inline-block;
+		line-height: 16px;
+		font-size: 20px;
+		line-height: 22px;
+		border-bottom: 1px solid #2884be;
+		&:hover {
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+	&__news-date {
+		margin-bottom: 8px;
+	}
+	&__news-link {
+		font-size: 55%;
+		line-height: 22px;
+		border-bottom: 1px solid #2884be;
+		&:hover {
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+	&__brand {
+		margin-bottom: 42px;
 	}
 }

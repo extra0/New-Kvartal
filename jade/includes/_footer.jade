@@ -1,3 +1,32 @@
 footer.footer
-	.container-fluid
+	.container
+		.row
+			ul.footer__menu.list-unstyled.col-xs-5
+				li.footer__item
+					a.footer__link(href="#") О компании
+				li.footer__item
+					a.footer__link(href="#") Выбор квартиры
+				li.footer__item
+					a.footer__link(href="#") Наши услуги 
+				li.footer__item
+					a.footer__link(href="#") Фотогалерея
+				li.footer__item
+					a.footer__link(href="#") Соц.партнерство 
+				li.footer__item
+					a.footer__link(href="#") Спец.предложения
+				li.footer__item
+					a.footer__link(href="#") Контакты
+			.footer__phone-block
+				.footer__phone-item
+					p.footer__phone +7 812
+						span.footer__phone-sufix(onclick="window.location.href='tel:+83467318477';") 643 44 07
+					p.footer__phone-name Приемная
+				.footer__phone-item
+					p.footer__phone +7 812
+						span.footer__phone-sufix(onclick="window.location.href='tel:+83467318477';") 643 44 07
+					p.footer__phone-name Офис отдела продаж
+				.footer__copyright
+					p.footer__copyright-text © 2014 ООО Квартал
+					p.footer__copyright-develop Разработка сайта - студия 
+						a.footer__copyright-link(href="#") Максимус
 include _script

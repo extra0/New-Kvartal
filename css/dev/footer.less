@@ -1,3 +1,74 @@
 .footer {
-    
+    background: url(../img/footer_bg.png) 0 0 repeat-x;
+    padding: 45px 0 27px 0;
+    // меню в футере
+    &__list {}
+    &__item {
+		width: 184px;
+		margin: 0 39px 18px 0;
+		display: inline-block;
+    }
+    &__link {
+		text-transform: uppercase;
+		color: #fff;
+		font-family: 'Roboto Black';
+		display: inline-block;
+		border-bottom: 1px solid #5c697a;
+		line-height: 16px;
+		&:hover {
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+    }
+    // блок с телефонами
+    &__phone-block {
+    	float: right;
+    	margin: -3px 0 0 0;
+    }
+    &__phone-item {
+    	display: inline-block;
+    	margin-left: 85px;
+    }
+    &__phone {
+    	color: #fff;
+    	font-size: 16px;
+    	font-family: 'Roboto';
+    	vertical-align: top;
+    	cursor: pointer;
+    	margin: 0;
+    }
+    &__phone-sufix {
+    	font-size: 26px;
+    	margin: 0px 0 0 7px;
+    	position: relative;
+    	top: -3px;
+    }
+    &__phone-name {
+    	color: #b6b6b6;
+    	margin: -5px 0 0 0px;
+    }
+    // блок копирайта
+    &__copyright {
+    	margin: 34px 0 0 73px;
+    }
+    &__copyright-text {
+    	color: #fff;
+    	margin: 0 0 11px 0;
+    }
+    &__copyright-develop {
+    	color: #fff;
+    	margin: 0 0 11px 13px;
+    }
+    &__copyright-link {
+    	border-bottom: 1px solid #979ca4;
+    	display: inline-block;
+    	line-height: 16px;
+    	color: #fff;
+    	margin-left: 2px;
+    	&:hover {
+    		color: #fff;
+    		border-bottom: 1px solid transparent;
+    		text-decoration: none;
+    	}
+    }
 }
