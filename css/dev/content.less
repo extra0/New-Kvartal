@@ -1,24 +1,376 @@
 // видео блок
+.full__screen {
+	position: relative;
+	height: 100vh;
+}
 .video {
 	&__block {
+		margin: 0 auto;
 		width: 100%;
-		height: 100vh;
-		position: absolute;
-		margin-top: -85px;
-		z-index: -1;
+		height: 100%;
 		overflow: hidden;
-		margin-bottom: -65px;
+		margin-top: -86px;
+		z-index: -1;
 	}
 	&__wrap {
 		position: absolute;
 	    width: 100%;
-	    height: 100%;
+	    height: 100vh;
 	    background: url(../img/shadow.png) 0px -90px repeat-x;
 	    background-color: rgba(21,49,65,0.46)
 	}
 	&__play {
 		width: 100%;
-		position: absolute;
 		z-index: -1;
+	}
+	&__upper {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+}
+// блок телефонов под шапкой
+.phone {
+	&__block {
+		margin: 19px 0 116px 21.6%;
+	}
+	&__operator {
+		max-width: 51px;
+		max-height: 51px;
+		border-radius: 50%;
+		border: 2px solid #d4d4d4;
+	}
+	&__inner {
+		display: inline-block;
+		vertical-align: top;
+		margin: 3px 35px 0 26px;
+		letter-spacing: -1px;
+	}
+	&__number {
+		cursor: pointer;
+		color: #fff;
+		font-size: 26px;
+		font-weight: 300;
+		margin: -4px 0 1px 0;
+	}
+	&__sufix {
+		font-weight: 500;
+	}
+	&__text {
+		margin: 0;
+		color: #fff;
+	}
+	&__call-me-block {
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px 0 0 26px;
+	}
+	&__call-me {
+		border-bottom: 1px dotted #588fc3;
+		color: #588fc3;
+		font-size: 50%;
+		&:hover {
+			color: lighten(#588fc3, 10%);
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+// заголовки
+.title {
+	font-size: 52px;
+	font-family: 'Roboto Black';
+	color: #2a2a2a;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	&._white {
+		color: #fff;
+	}
+}
+// блок приемуществ после шапки 
+.advantages {
+	&__block {
+		vertical-align: top;
+		width: 19%;
+		text-align: center;
+	}
+	&__list {
+		margin: 71px -58px 71px -16px!important;
+	}
+	&__img {
+		display: block;
+		margin: 0 auto 45px auto;
+	}
+	&__text {
+		color: #fff;
+		line-height: 28px;
+		font-size: 20px;
+	}
+}
+// кнопка спуска вниз 
+.button__down {
+	// position: absolute;
+	// bottom: 90px;
+}
+// блок с обьектами
+.object {
+	&__block {
+		position: relative;
+		padding-top: 80px;
+	}
+	&__map {
+		position: relative;
+		margin-top: -167px;
+	}
+	&__point {
+		position: absolute;
+		&._young {
+			top: 165px;
+			left: 564px;
+			z-index: 20;
+		}
+		&._gallery {
+			top: 388px;
+		    left: 610px;
+		    z-index: 19;
+		}
+		&._museum {
+			top: 460px;
+			left: 570px;
+			z-index: 18;
+		}
+		&._temple {
+			top: 560px;
+			left: 480px;
+			z-index: 17;
+		}
+		&._etnos {
+			top: 560px;
+		    left: 270px;
+		    z-index: 16;
+		}
+		&._biatlon {
+			top: 840px;
+			left: 480px;
+			z-index: 15;
+		}
+		&._freedom {
+			top: 1297px;
+			left: 703px;
+			z-index: 14;
+		}
+	}
+	&__link {
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__circle {
+		position: absolute;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&.active {
+			top: -6px;
+			left: -5px;
+			animation: scales 0.5s ease-in-out;
+			-webkit-animation: scales 0.5s ease-in-out;
+			@keyframes scales {
+				0% {
+					-moz-transform: scale(0);
+					-webkit-transform: scale(0);
+					-o-transform: scale(0);
+					-ms-transform: scale(0);
+					transform: scale(0);
+				}
+				50% {
+					-moz-transform: scale(1.2);
+					-webkit-transform: scale(1.2);
+					-o-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+				100% {
+					-moz-transform: scale(1);
+					-webkit-transform: scale(1);
+					-o-transform: scale(1);
+					-ms-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+			@-webkit-keyframes scales {
+				0% {
+					-moz-transform: scale(0);
+					-webkit-transform: scale(0);
+					-o-transform: scale(0);
+					-ms-transform: scale(0);
+					transform: scale(0);
+				}
+				50% {
+					-moz-transform: scale(1.2);
+					-webkit-transform: scale(1.2);
+					-o-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+				100% {
+					-moz-transform: scale(1);
+					-webkit-transform: scale(1);
+					-o-transform: scale(1);
+					-ms-transform: scale(1);
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	&__name {
+		color: #5687be;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 17px;
+		margin: 3px 0 0 35px;
+	}
+	&__inner {
+		display: none;
+		background: #f5f6ed;
+		border-radius: 5px;
+		width: 223px;
+		position: absolute;
+		&._young {
+			top: -19px;
+			left: -243px;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/triangle.png) 0 0 no-repeat;
+				width: 35px;
+				height: 37px;
+				top: 29px;
+			    right: -35px;
+				z-index: 21;
+			}
+		}
+		&._gallery {
+			top: -20px;
+			left: -240px;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/triangle.png) 0 0 no-repeat;
+				width: 35px;
+				height: 37px;
+				top: 29px;
+			    right: -35px;
+				z-index: 21;
+			}
+		}
+		&._museum {
+			top: -20px;
+			left: -240px;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/triangle.png) 0 0 no-repeat;
+				width: 35px;
+				height: 37px;
+				top: 29px;
+			    right: -35px;
+				z-index: 21;
+			}
+		}
+		&._temple {
+			top: -20px;
+			left: 47px;
+			&:before {
+				content: '';
+			    position: absolute;
+			    background: url(../img/triangle_down.png) 0 0 no-repeat;
+			    width: 35px;
+			    height: 37px;
+			    top: 29px;
+			    right: 223px;
+			    z-index: 21;
+			    -moz-transform: rotate(90deg);
+			    -webkit-transform: rotate(90deg);
+			    -o-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+			    transform: rotate(90deg);
+			}
+		}
+		&._etnos {
+			top: 46px;
+			left: -41px;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/triangle.png) 0 0 no-repeat;
+				width: 35px;
+				height: 37px;
+				top: -36px;
+				right: 135px;
+				z-index: 21;
+				-moz-transform: rotate(-90deg);
+				-webkit-transform: rotate(-90deg);
+				-o-transform: rotate(-90deg);
+				-ms-transform: rotate(-90deg);
+				transform: rotate(-90deg);
+			}
+		}
+		&._biatlon {
+			top: -20px;
+			left: -240px;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/triangle.png) 0 0 no-repeat;
+				width: 35px;
+				height: 37px;
+				top: 29px;
+			    right: -35px;
+				z-index: 21;
+			}
+		}
+		&._freedom {
+			top: -263px;
+			left: -11px;
+			&:before {
+				content: '';
+			    position: absolute;
+			    background: url(../img/triangle_down.png) 0 0 no-repeat;
+			    width: 35px;
+			    height: 37px;
+			    top: 100%;
+			    right: 166px;
+			    z-index: 21;
+			}
+		}
+	}
+	&__img {
+		border-radius: 5px 5px 0 0;
+	}
+	&__inner-title {
+		font-size: 20px;
+		margin: 15px 0 -5px 21px;
+		color: #323232;
+		line-height: 24px;
+	}
+	&__inner-link {
+		color: #2884be;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 20px;
+		text-indent: -10px;
+		display: block;
+		padding: 6px 0 13px 21px;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }

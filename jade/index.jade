@@ -1,13 +1,109 @@
 extends _layout
 block content
 	.main__content
-		.video__block
-			.video__wrap
-			video.video__play(loop autoplay)
-				source(src="video/video2.mp4" type="video/mp4")
-				source(src="video/video2.webm" type="video/webm")
-				source(src="video/video2.ogg" type="video/ogg")
-		.container
-			.row
-				.phone__block.col-xs-8
-					img.phone__operator(src="img/ava.png", alt="")
+		.full__screen
+			.video__block
+				.video__wrap
+				video.video__play(loop)
+					source(src="video/index.mp4" type="video/mp4")
+					source(src="video/video2.webm" type="video/webm")
+					source(src="video/video2.ogg" type="video/ogg")
+			.video__upper
+				.container
+					.row
+						.phone__block.col-xs-8
+							img.phone__operator(src="img/content/ava.png", alt="")
+							.phone__inner
+								p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
+									span.phone__sufix 318-477
+								p.phone__text Приемная
+							.phone__inner
+								p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
+									span.phone__sufix 318-477
+								p.phone__text Отдел продаж
+							.phone__call-me-block
+								a.phone__call-me(href="#")
+									span.border Заказать<br>обратный звонок
+					.advantages__section
+						h1.title._white мы строим недвижимость для вас
+						ul.advantages__list.list-inline
+							li.advantages__block
+								img.advantages__img(src="img/head_img1.png", alt="")
+								p.advantages__text Качественные<br>и экологические<br>материалы
+							li.advantages__block
+								img.advantages__img(src="img/head_img2.png", alt="")
+								p.advantages__text Современные<br>технологии и методы<br>строительства
+							li.advantages__block
+								img.advantages__img(src="img/head_img3.png", alt="")
+								p.advantages__text Соблюдение<br>сроков<br>строительства
+							li.advantages__block
+								img.advantages__img(src="img/head_img4.png", alt="")
+								p.advantages__text Прочные<br>партнерские<br>отношения
+							li.advantages__block
+								img.advantages__img(src="img/head_img5.png", alt="")
+								p.advantages__text Забота о вас<br>и ваших близких
+			//- .text-center
+			//- 	a.button__down(href="#object")
+			//- 		img(src="img/mouse.png", alt="")
+			.object__block#object
+				.container
+					h2.title Объекты компании
+					.object__map
+						img.objects__img(src="img/map.png", alt="")
+					.object__point-block
+						.object__point._young
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Жилой комплекс<br>"Молодежный"
+							.object__inner._young
+								img.object__img(src="img/content/object.jpg", alt="")
+								p.object__inner-title Жилой комплекс
+								a.object__inner-link(href="#") «Молодежный»
+						.object__point._gallery
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Картинная <br>галерея Фонда <br>поколений
+							.object__inner._gallery
+								img.object__img(src="img/content/object2.jpg", alt="")
+								p.object__inner-title Жилой комплекс
+								a.object__inner-link(href="#") «Галерейный»
+						.object__point._museum
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Музей геологии,<br>нефти и газа
+							.object__inner._museum
+								img.object__img(src="img/content/object2.jpg", alt="")
+								p.object__inner-title Кутузовский проспект и статуя рядом
+								a.object__inner-link(href="#") «Геологический»
+						.object__point._temple
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Храм Воскресения<br>Христова
+							.object__inner._temple
+								img.object__img(src="img/content/object.jpg", alt="")
+								p.object__inner-title Храм Воскресения Христова
+								a.object__inner-link(href="#") «Воскресный имени патритов»
+						.object__point._etnos
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Этнографический <br>музей под открытым <br>небом "Торум Маа"
+							.object__inner._etnos
+								img.object__img(src="img/content/object.jpg", alt="")
+								p.object__inner-title Этнографический музей 
+								a.object__inner-link(href="#") «Этнографический»
+						.object__point._biatlon
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Биатлонный <br>центр
+							.object__inner._biatlon
+								img.object__img(src="img/content/object.jpg", alt="")
+								p.object__inner-title Биатлонный центр
+								a.object__inner-link(href="#") «Биатлонный»
+						.object__point._freedom
+							a.object__link(href="#")
+								img.object__circle(src="img/circle.png", alt="")
+								p.object__name Свободный<br>район
+							.object__inner._freedom
+								img.object__img(src="img/content/object2.jpg", alt="")
+								p.object__inner-title Жилой комплекс
+								a.object__inner-link(href="#") «Свобода»
