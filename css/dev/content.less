@@ -1,35 +1,30 @@
+.main {
+	&__underhead {
+		margin: -86px 0 -18px 0;
+	}
+}
 // видео блок
 .full__screen {
-	position: relative;
-	// height: 100vh;
+	position: absolute;
+	overflow: hidden;
 }
 .video {
 	&__block {
 		margin: 0 auto;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		margin-top: -86px;
+		width: 100%; 
 		z-index: -1;
 	}
 	&__wrap {
 		position: absolute;
 	    width: 100%;
 	    height: 100%;
-	   	margin-bottom: -5px;
+	   	top: -5px;
 	    background: url(../img/shadow.png) 0px -90px repeat-x;
 	    background-color: rgba(21,49,65,0.46)
 	}
 	&__play {
 		width: 100%;
 		z-index: -1;
-	}
-	&__upper {
-		position: absolute;
-		z-index: 2;
-		top: 0;
-		right: 0;
-		left: 0;
 	}
 }
 // блок телефонов под шапкой
@@ -56,6 +51,10 @@
 		font-family: 'Roboto Light';
 		margin: -4px 0 1px 0;
 		letter-spacing: 0;
+		&._black {
+			color: #000;
+			font-family: 'Roboto Medium';
+		}
 	}
 	&__sufix {
 		font-family: 'Roboto Medium';
@@ -63,6 +62,9 @@
 	&__text {
 		margin: 0;
 		color: #fff;
+		&._black {
+			color: #000;
+		}
 	}
 	&__call-me-block {
 		display: inline-block;
@@ -111,6 +113,9 @@
 		color: #fff;
 		line-height: 28px;
 		font-size: 20px;
+		&._black {
+			color: #292929;
+		}
 	}
 }
 // кнопка спуска вниз 
@@ -380,9 +385,15 @@
 		.title {
 			margin-bottom: 44px;
 		}
+		&._marg {
+			margin: 64px 0 -70px 0;
+		}
 	}
 	&__price {
 		margin: 140px 0 50px 0;
+		&._marg {
+			margin: 0px 6% 0 61px;
+		}
 	}
 	&__news {
 		float: right;
@@ -407,6 +418,11 @@
 		font-size: 20px;
 		line-height: 30px;
 		margin: 0px 0px 30px 0;
+		&._height {
+			color: #292929;
+			line-height: 38px;
+		    margin: -6px 0 0 0;
+		}
 	}
 	&__link {
 		display: inline-block;
@@ -433,5 +449,106 @@
 	}
 	&__brand {
 		margin-bottom: 42px;
+	}
+	&__name {
+		margin: 15px 0 6px 0;
+		width: 150px;
+		font-size: 20px;
+		color: #373737;
+		font-family: 'Roboto Bold';
+	}
+	&__position {
+		margin: 0;
+		color: #373737;
+	}
+}
+// блок цитаты на странице о компании
+.blockquote {
+	&__section {
+		background: url(../img/blue_bg.jpg) 0 0 no-repeat;
+		background-size: cover;
+		padding: 44px 0 47px 0;
+	}
+	&__text {
+		color: #fff;
+		font-size: 30px;
+		margin-bottom: 0;
+		line-height: 50px;
+		font-family: 'Roboto Medium';
+	}
+}
+// блок истории
+.history {
+	&__section {
+		height: 440px;
+		overflow: hidden;
+		text-align: center;
+		margin-left: -100px;
+		margin-top: 137px;
+	}
+	&__wrap {
+		width: 20000px;
+	}
+	&__block {
+		text-align: left;
+		vertical-align: top;
+		float: left;
+		width: 263px;
+		height: 440px;
+		display: inline-block;
+		background: #080581;
+		box-sizing: border-box;
+		padding: 30px 37px;
+		position: relative;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:before {
+			content: '';
+			position: absolute;
+			background: rgba(131, 89, 194, 0.72);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+		&.hover {
+			&:before {
+				top: 100%;
+			}
+		}
+	}
+	&__img-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	&__text {
+		color: #fff;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	&__year {
+		margin: 0;
+		color: #fff;
+		position: relative;
+		z-index: 2;
+		font-weight: bold;
+		font-size: 40px;
+		margin-bottom: 11px;
 	}
 }

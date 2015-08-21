@@ -1,0 +1,174 @@
+extends _layout
+block content
+	.main__content
+		.main__underhead
+			.container
+				.row
+					.phone__block.col-xs-8
+						img.phone__operator(src="img/content/ava.png", alt="")
+						.phone__inner
+							p.phone__number._black(onclick="window.location.href='tel:+83467318477';") 8 3467 
+								span.phone__sufix 318-477
+							p.phone__text._black Приемная
+						.phone__inner
+							p.phone__number._black(onclick="window.location.href='tel:+83467318477';") 8 3467 
+								span.phone__sufix 318-477
+							p.phone__text._black Отдел продаж
+						.phone__call-me-block
+							a.phone__call-me(href="#")
+								span.border Заказать<br>обратный звонок
+				.advantages__section
+					h1.title мы строим недвижимость для вас
+					ul.advantages__list.list-inline
+						li.advantages__block
+							img.advantages__img(src="img/adv_img1.png", alt="")
+							p.advantages__text._black Качественные<br>и экологические<br>материалы
+						li.advantages__block
+							img.advantages__img(src="img/adv_img2.png", alt="")
+							p.advantages__text._black Современные<br>технологии и методы<br>строительства
+						li.advantages__block
+							img.advantages__img(src="img/adv_img3.png", alt="")
+							p.advantages__text._black Соблюдение<br>сроков<br>строительства
+						li.advantages__block
+							img.advantages__img(src="img/adv_img4.png", alt="")
+							p.advantages__text._black Прочные<br>партнерские<br>отношения
+						li.advantages__block
+							img.advantages__img(src="img/adv_img5.png", alt="")
+							p.advantages__text._black Забота о вас<br>и ваших близких
+		.blockquote__section
+			.container
+				p.blockquote__text.col-xs-offset-3.col-xs-7 При строительстве наших объектов мы внимательно относимся к комфорту и требованиям покупателей, при этом не забывая об окружающей среде, пунктуально соблюдая строительные нормы, правила и экологические стандарты.
+		.about__block._marg
+			.container
+				.row
+					.about__price.col-xs-2._marg
+						img.about__img(src="img/price.png", alt="")
+						a.about__price-link(href="#")
+							span.border Прайс-лист<br>на строительные<br>услуги
+					.about__center.col-xs-7
+						p.about__text._height Строительную деятельность Общество осуществляет в соответствии со свидетельством <i>№ 1291.03-2010-8601024787-С-049</i> о допуске к работам, которые оказывают влияние на безопасность объектов капитального строительства, выданному некоммерческим партнерством «<strong>Первая гильдия строителей</strong>», регистрационный номер в государственном реестре саморегулируемых организаций: <i>СРО-С-049-14102009</i>.
+		.object__block#object
+			.container
+				h2.title Объекты компании
+				.object__map
+					img.objects__img(src="img/map.png", alt="")
+				.object__point-block
+					.object__point._young
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Жилой комплекс<br>"Молодежный"
+						.object__inner._young
+							img.object__img(src="img/content/object.jpg", alt="")
+							p.object__inner-title Жилой комплекс
+							a.object__inner-link(href="#") «Молодежный»
+					.object__point._gallery
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Картинная <br>галерея Фонда <br>поколений
+						.object__inner._gallery
+							img.object__img(src="img/content/object2.jpg", alt="")
+							p.object__inner-title Жилой комплекс
+							a.object__inner-link(href="#") «Галерейный»
+					.object__point._museum
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Музей геологии,<br>нефти и газа
+						.object__inner._museum
+							img.object__img(src="img/content/object2.jpg", alt="")
+							p.object__inner-title Кутузовский проспект и статуя рядом
+							a.object__inner-link(href="#") «Геологический»
+					.object__point._temple
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Храм Воскресения<br>Христова
+						.object__inner._temple
+							img.object__img(src="img/content/object.jpg", alt="")
+							p.object__inner-title Храм Воскресения Христова
+							a.object__inner-link(href="#") «Воскресный имени патритов»
+					.object__point._etnos
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Этнографический <br>музей под открытым <br>небом "Торум Маа"
+						.object__inner._etnos
+							img.object__img(src="img/content/object.jpg", alt="")
+							p.object__inner-title Этнографический музей 
+							a.object__inner-link(href="#") «Этнографический»
+					.object__point._biatlon
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Биатлонный <br>центр
+						.object__inner._biatlon
+							img.object__img(src="img/content/object.jpg", alt="")
+							p.object__inner-title Биатлонный центр
+							a.object__inner-link(href="#") «Биатлонный»
+					.object__point._freedom
+						a.object__link(href="#")
+							img.object__circle(src="img/circle.png", alt="")
+							p.object__name Свободный<br>район
+						.object__inner._freedom
+							img.object__img(src="img/content/object2.jpg", alt="")
+							p.object__inner-title Жилой комплекс
+							a.object__inner-link(href="#") «Свобода»
+		.about__block._marg
+			.container
+				.row
+					.about__price.col-xs-2._marg
+						img.about__img(src="img/content/ava.jpg", alt="")
+						p.about__name Иванов Петр Петрович
+						p.about__position Директор
+					.about__center.col-xs-7
+						p.about__text._height Строительную деятельность Общество осуществляет в соответствии со свидетельством <i>№ 1291.03-2010-8601024787-С-049</i> о допуске к работам, которые оказывают влияние на безопасность объектов капитального строительства, выданному некоммерческим партнерством «<strong>Первая гильдия строителей</strong>», регистрационный номер в государственном реестре саморегулируемых организаций: <i>СРО-С-049-14102009</i>.
+		.history__section
+			.history__wrap
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2004
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2005
+					p.history__text А также качеству и срокам строительства жилых домов не поступало.
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2004
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2005
+					p.history__text А также качеству и срокам строительства жилых домов не поступало.
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2004
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2005
+					p.history__text Нареканий со стороны участников долевого строительства по юридическому оформлению, а также качеству и срокам строительства жилых домов не поступало.
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2010
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2012
+					p.history__text Строительство II и III очереди Жилого комплекса по ул.Промышленная начато в марте 2012 года и планируется к сдаче во втором квартале 2013 года.
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2010
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2012
+					p.history__text Строительство II и III очереди Жилого комплекса по ул.Промышленная начато в марте 2012 года и планируется к сдаче во втором квартале 2013 года.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2012
+					p.history__text Строительство II и III очереди Жилого комплекса по ул.Промышленная начато в марте 2012 года и планируется к сдаче во втором квартале 2013 года.
+				.history__block
+					img.history__img-bg(src="img/content/history_img1.jpg", alt="")
+					p.history__year 2010
+					p.history__text Строительную деятельность Общество осуществляет в соответствии.
+				.history__block
+					img.history__img-bg(src="img/content/history_img2.jpg", alt="")
+					p.history__year 2012
+					p.history__text Строительство II и III очереди Жилого комплекса по ул.Промышленная начато в марте 2012 года и планируется к сдаче во втором квартале 2013 года.
