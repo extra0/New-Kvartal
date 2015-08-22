@@ -1,0 +1,43 @@
+extends _layout
+block content
+	.main__content._offers
+		.main__underhead
+			.offers__shadow
+			.container
+				.row
+					.phone__block.col-xs-8
+						img.phone__operator(src="img/content/ava.png", alt="")
+						.phone__inner
+							p.phone__number._black(onclick="window.location.href='tel:+83467318477';") 8 3467 
+								span.phone__sufix 318-477
+							p.phone__text._black Приемная
+						.phone__inner
+							p.phone__number._black(onclick="window.location.href='tel:+83467318477';") 8 3467 
+								span.phone__sufix 318-477
+							p.phone__text._black Отдел продаж
+						.phone__call-me-block
+							a.phone__call-me(href="#")
+								span.border Заказать<br>обратный звонок
+				.offers__section
+					h1.title специальные предложения
+					p.offers__text Для наших любимых клиентов мы подготовили множество потрясающих акций.
+					.row
+						.offers__block
+							img.offers__img(src="img/content/offers.jpg", alt="")
+							.offers__block-inner
+								a.offers__link(href="#") Ипотека за час!
+								p.offers__inner-text Потрясающая акция, направленная на то, чтобы сделать покупку жилья еще доступнее
+						.offers__block
+							img.offers__img(src="img/content/offers2.jpg", alt="")
+							.offers__block-inner
+								a.offers__link(href="#") Скидки до 3% для всех клиентов Сбербанка
+								p.offers__inner-text В кредитном договоре все в порядке, читать не обязательно
+						.offers__block
+							img.offers__img(src="img/content/offers3.jpg", alt="")
+							.offers__block-inner
+								a.offers__link(href="#") Ипотека 9% от Ханты-Мансийского банка
+								p.offers__inner-text Выгодно и популярно. Меньше чем инфляция, больше, чем дефляция.
+				.box__section
+					img.box__img(src="img/box.png", alt="")
+					img.box__img._confeti(src="img/confeti.png", alt="")
+					//- img.box__img._confeti-mini(src="img/confeti_mini.png", alt="")

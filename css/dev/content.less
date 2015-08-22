@@ -2,6 +2,11 @@
 	&__underhead {
 		margin: -86px 0 -18px 0;
 	}
+	&__content {
+		&._offers {
+			background: url(../img/confeti.png) bottom center no-repeat;
+		}
+	}
 }
 // видео блок
 .full__screen {
@@ -30,7 +35,10 @@
 // блок телефонов под шапкой
 .phone {
 	&__block {
-		margin: 19px 0 116px 21.6%;
+		margin: 19px 0 36px 21.6%;
+		&._main {
+			margin: 19px 0 116px 21.6%;
+		}
 	}
 	&__operator {
 		max-width: 51px;
@@ -498,7 +506,7 @@
 		display: inline-block;
 		background: #080581;
 		box-sizing: border-box;
-		padding: 30px 37px;
+		padding: 30px 12px 30px 37px;
 		position: relative;
 		-webkit-transition: all 0.4s ease;
 		-moz-transition: all 0.4s ease;
@@ -550,5 +558,81 @@
 		font-weight: bold;
 		font-size: 40px;
 		margin-bottom: 11px;
+	}
+}
+// спец предложения
+.offers {
+	&__section {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 423px;
+		width: 100%;
+		background: url(../img/offers_shadow.png) 0 0 repeat-x;
+		z-index: -1;
+	}
+	&__text {
+		margin: 25px 0 53px 0;
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	&__block {
+		margin: 0 3%;
+	    text-align: left;
+	    background: #f3f4e9;
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 26%;
+	    padding: 0;
+	}
+	&__block-inner {
+		padding: 13px 15px 31px 15px;
+		box-sizing: border-box;
+		min-height: 151px;
+	}
+	&__img {
+		width: 100%;
+		max-height: 167px;
+	}
+	&__link {
+		font-weight: bold;
+		color: #2884be;
+		font-size: 20px;
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__inner-text {
+		color: #2a2a2a;
+		margin: 1px 0 0 0;
+	    line-height: 26px;
+	}
+}
+//  коробка 
+.box {
+	&__section {
+		position: relative;
+		margin: -208px 0 0 0;
+	}
+	&__img {
+		margin: 50px auto -78px auto;
+		display: block;
+		position: relative;
+		z-index: -1;
+		&._confeti {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&._confeti-mini {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 }

@@ -24,13 +24,13 @@ $(function() {
 	});
 
 	// hover на блок с историей
-	$('.history__block').hover(function(){
+	$('.history__block').hover(function() {
 		$(this).toggleClass('hover');
 	});
 
 	$(window).resize(function() {
-		return [ 
-			$('.video__play').width($(window).width()), 
+		return [
+			$('.video__play').width($(window).width()),
 			$('.video__play').height($(window).height()),
 			$('.video__block').width($(window).width()),
 			$('.video__block').height($(window).height()),
@@ -40,8 +40,8 @@ $(function() {
 	});
 
 	// ресайз окна
-	return [ 
-		$('.video__play').width($(window).width()), 
+	return [
+		$('.video__play').width($(window).width()),
 		$('.video__play').height($(window).height()),
 		$('.video__block').width($(window).width()),
 		$('.video__block').height($(window).height()),
@@ -49,6 +49,6 @@ $(function() {
 		$('.full__screen').height($(window).height())
 	];
 
-	
+
 
 });
