@@ -1,8 +1,7 @@
 extends _layout
 block content
-	.main__content._offers
+	.main__content
 		.main__underhead
-			.offers__shadow
 			.container
 				.row
 					.phone__block.col-xs-8
@@ -18,26 +17,228 @@ block content
 						.phone__call-me-block
 							a.phone__call-me(href="#")
 								span.border Заказать<br>обратный звонок
-		.offers__section
+		.photo__section
 			.container
-				h1.title специальные предложения
-				p.offers__text Для наших любимых клиентов мы подготовили множество потрясающих акций.
-				.row
-					.offers__block
-						img.offers__img(src="img/content/offers.jpg", alt="")
-						.offers__block-inner
-							a.offers__link(href="#") Ипотека за час!
-							p.offers__inner-text Потрясающая акция, направленная на то, чтобы сделать покупку жилья еще доступнее
-					.offers__block
-						img.offers__img(src="img/content/offers2.jpg", alt="")
-						.offers__block-inner
-							a.offers__link(href="#") Скидки до 3% для всех клиентов Сбербанка
-							p.offers__inner-text В кредитном договоре все в порядке, читать не обязательно
-					.offers__block
-						img.offers__img(src="img/content/offers3.jpg", alt="")
-						.offers__block-inner
-							a.offers__link(href="#") Ипотека 9% от Ханты-Мансийского банка
-							p.offers__inner-text Выгодно и популярно. Меньше чем инфляция, больше, чем дефляция.
-		.box__section
-			.container
-				img.box__img(src="img/box.png", alt="")
+				h1.title фотогалерея
+				ul.photo__list-type.list-inline
+					li.photo__item
+						a.photo__link.active(href="#") ЖК Квартал
+					li.photo__item
+						a.photo__link(href="#") Строительство
+					li.photo__item
+						a.photo__link(href="#") Наша компания
+					li.photo__item
+						a.photo__link(href="#") Победители акций
+				p.photo__text В гармонии с самой природой, в окружении лесопарковой зоны и набережной реки Иртыш. Благоустроенные площадки для пикников и б арбекю. Жилой комплекс «Свобода» — «новый», исторический центр создания г. Ханты-Мансийска, в пяти минутах ходьбы от площади Свободы и культурных мест города.
+			.gamma-container.gamma-loading#gamma-container
+				ul.gamma-gallery
+					li
+						div(data-alt="img09" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo5.jpg" data-min-width="1300")
+							div(data-src="img/content/photo5.jpg" data-min-width="1000")
+							div(data-src="img/content/photo5.jpg" data-min-width="700")
+							div(data-src="img/content/photo5.jpg" data-min-width="300")
+							div(data-src="img/content/photo5.jpg" data-min-width="200")
+							div(data-src="img/content/photo5.jpg" data-min-width="140")
+							div(data-src="img/content/photo5.jpg")
+							noscript
+								img(src="img/content/photo5.jpg", alt="img09")
+					li
+						div(data-alt="img01" data-description="<h3>фцвфцв</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo2.jpg" data-min-width="1300")
+							div(data-src="img/content/photo2.jpg" data-min-width="1000")
+							div(data-src="img/content/photo2.jpg" data-min-width="700")
+							div(data-src="img/content/photo2.jpg" data-min-width="300")
+							div(data-src="img/content/photo2.jpg" data-min-width="200")
+							div(data-src="img/content/photo2.jpg" data-min-width="140")
+							div(data-src="img/content/photo2.jpg")
+							noscript
+								img(src="img/content/photo2.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo6.jpg" data-min-width="1300")
+							div(data-src="img/content/photo6.jpg" data-min-width="1000")
+							div(data-src="img/content/photo6.jpg" data-min-width="700")
+							div(data-src="img/content/photo6.jpg" data-min-width="300")
+							div(data-src="img/content/photo6.jpg" data-min-width="200")
+							div(data-src="img/content/photo6.jpg" data-min-width="140")
+							div(data-src="img/content/photo6.jpg")
+							noscript
+								img(src="img/content/photo6.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo4.jpg" data-min-width="1300")
+							div(data-src="img/content/photo4.jpg" data-min-width="1000")
+							div(data-src="img/content/photo4.jpg" data-min-width="700")
+							div(data-src="img/content/photo4.jpg" data-min-width="300")
+							div(data-src="img/content/photo4.jpg" data-min-width="200")
+							div(data-src="img/content/photo4.jpg" data-min-width="140")
+							div(data-src="img/content/photo4.jpg")
+							noscript
+								img(src="img/content/photo4.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+					li
+						div(data-alt="img02" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo7.jpg" data-min-width="1300")
+							div(data-src="img/content/photo7.jpg" data-min-width="1000")
+							div(data-src="img/content/photo7.jpg" data-min-width="700")
+							div(data-src="img/content/photo7.jpg" data-min-width="300")
+							div(data-src="img/content/photo7.jpg" data-min-width="200")
+							div(data-src="img/content/photo7.jpg" data-min-width="140")
+							div(data-src="img/content/photo7.jpg")
+							noscript
+								img(src="img/content/photo7.jpg", alt="img02")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo3.jpg" data-min-width="1300")
+							div(data-src="img/content/photo3.jpg" data-min-width="1000")
+							div(data-src="img/content/photo3.jpg" data-min-width="700")
+							div(data-src="img/content/photo3.jpg" data-min-width="300")
+							div(data-src="img/content/photo3.jpg" data-min-width="200")
+							div(data-src="img/content/photo3.jpg" data-min-width="140")
+							div(data-src="img/content/photo3.jpg")
+							noscript
+								img(src="img/content/photo3.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo5.jpg" data-min-width="1300")
+							div(data-src="img/content/photo5.jpg" data-min-width="1000")
+							div(data-src="img/content/photo5.jpg" data-min-width="700")
+							div(data-src="img/content/photo5.jpg" data-min-width="300")
+							div(data-src="img/content/photo5.jpg" data-min-width="200")
+							div(data-src="img/content/photo5.jpg" data-min-width="140")
+							div(data-src="img/content/photo5.jpg")
+							noscript
+								img(src="img/content/photo5.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>фцвфцв</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo2.jpg" data-min-width="1300")
+							div(data-src="img/content/photo2.jpg" data-min-width="1000")
+							div(data-src="img/content/photo2.jpg" data-min-width="700")
+							div(data-src="img/content/photo2.jpg" data-min-width="300")
+							div(data-src="img/content/photo2.jpg" data-min-width="200")
+							div(data-src="img/content/photo2.jpg" data-min-width="140")
+							div(data-src="img/content/photo2.jpg")
+							noscript
+								img(src="img/content/photo2.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo6.jpg" data-min-width="1300")
+							div(data-src="img/content/photo6.jpg" data-min-width="1000")
+							div(data-src="img/content/photo6.jpg" data-min-width="700")
+							div(data-src="img/content/photo6.jpg" data-min-width="300")
+							div(data-src="img/content/photo6.jpg" data-min-width="200")
+							div(data-src="img/content/photo6.jpg" data-min-width="140")
+							div(data-src="img/content/photo6.jpg")
+							noscript
+								img(src="img/content/photo6.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo4.jpg" data-min-width="1300")
+							div(data-src="img/content/photo4.jpg" data-min-width="1000")
+							div(data-src="img/content/photo4.jpg" data-min-width="700")
+							div(data-src="img/content/photo4.jpg" data-min-width="300")
+							div(data-src="img/content/photo4.jpg" data-min-width="200")
+							div(data-src="img/content/photo4.jpg" data-min-width="140")
+							div(data-src="img/content/photo4.jpg")
+							noscript
+								img(src="img/content/photo4.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo7.jpg" data-min-width="1300")
+							div(data-src="img/content/photo7.jpg" data-min-width="1000")
+							div(data-src="img/content/photo7.jpg" data-min-width="700")
+							div(data-src="img/content/photo7.jpg" data-min-width="300")
+							div(data-src="img/content/photo7.jpg" data-min-width="200")
+							div(data-src="img/content/photo7.jpg" data-min-width="140")
+							div(data-src="img/content/photo7.jpg")
+							noscript
+								img(src="img/content/photo7.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo3.jpg" data-min-width="1300")
+							div(data-src="img/content/photo3.jpg" data-min-width="1000")
+							div(data-src="img/content/photo3.jpg" data-min-width="700")
+							div(data-src="img/content/photo3.jpg" data-min-width="300")
+							div(data-src="img/content/photo3.jpg" data-min-width="200")
+							div(data-src="img/content/photo3.jpg" data-min-width="140")
+							div(data-src="img/content/photo3.jpg")
+							noscript
+								img(src="img/content/photo3.jpg", alt="img01")		
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo4.jpg" data-min-width="1300")
+							div(data-src="img/content/photo4.jpg" data-min-width="1000")
+							div(data-src="img/content/photo4.jpg" data-min-width="700")
+							div(data-src="img/content/photo4.jpg" data-min-width="300")
+							div(data-src="img/content/photo4.jpg" data-min-width="200")
+							div(data-src="img/content/photo4.jpg" data-min-width="140")
+							div(data-src="img/content/photo4.jpg")
+							noscript
+								img(src="img/content/photo4.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+					li
+						div(data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400")
+							div(data-src="img/content/photo1.jpg" data-min-width="1300")
+							div(data-src="img/content/photo1.jpg" data-min-width="1000")
+							div(data-src="img/content/photo1.jpg" data-min-width="700")
+							div(data-src="img/content/photo1.jpg" data-min-width="300")
+							div(data-src="img/content/photo1.jpg" data-min-width="200")
+							div(data-src="img/content/photo1.jpg" data-min-width="140")
+							div(data-src="img/content/photo1.jpg")
+							noscript
+								img(src="img/content/photo1.jpg", alt="img01")
+				.gamma-overlay
