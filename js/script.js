@@ -28,7 +28,7 @@ $(function() {
 		$(this).toggleClass('hover');
 	});
 
-	// галерея 
+	// фотогалерея 
 	var GammaSettings = {
 		// order is important!
 		viewport: [{
@@ -49,6 +49,13 @@ $(function() {
 		}]
 	};
 	Gamma.init(GammaSettings);
+
+	// слайдер на странице обьекта
+	$('.estate__slider').bxSlider({
+		controls: false,
+		pagerCustom: '.bx-pager__block',
+		slideWidth: 645
+	});
 
 	$(window).resize(function() {
 		return [

@@ -104,6 +104,12 @@
 	&._white {
 		color: #fff;
 	}
+	&._textL {
+		text-align: left;
+	}
+	&__type {
+		font-family: 'Roboto';
+	}
 }
 // блок приемуществ после шапки 
 .advantages {
@@ -817,6 +823,267 @@
 		border-bottom: 1px solid;
 		display: inline-block;
 		line-height: 24px;
+		&:hover {
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+}
+//  наши обьекты
+.flat {
+	&__section {
+
+	}
+	&__text {
+		text-align: center;
+		margin: 20px 0 32px 0;
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	&__objects {
+		background: url(../img/wave.png) repeat-x;
+		padding-bottom: 80px;
+		margin-bottom: 5px;
+	}
+	&__list {
+		text-align: center;
+	}
+	&__link {
+		background: rgb(239,241,227); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(239,241,227,1) 0%, rgba(235,237,221,1) 10%, rgba(235,237,220,1) 24%, rgba(236,238,222,1) 30%, rgba(244,245,236,1) 47%, rgba(246,247,239,1) 56%, rgba(246,247,239,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,241,227,1)), color-stop(10%,rgba(235,237,221,1)), color-stop(24%,rgba(235,237,220,1)), color-stop(30%,rgba(236,238,222,1)), color-stop(47%,rgba(244,245,236,1)), color-stop(56%,rgba(246,247,239,1)), color-stop(100%,rgba(246,247,239,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(239,241,227,1) 0%,rgba(235,237,221,1) 10%,rgba(235,237,220,1) 24%,rgba(236,238,222,1) 30%,rgba(244,245,236,1) 47%,rgba(246,247,239,1) 56%,rgba(246,247,239,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(239,241,227,1) 0%,rgba(235,237,221,1) 10%,rgba(235,237,220,1) 24%,rgba(236,238,222,1) 30%,rgba(244,245,236,1) 47%,rgba(246,247,239,1) 56%,rgba(246,247,239,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(239,241,227,1) 0%,rgba(235,237,221,1) 10%,rgba(235,237,220,1) 24%,rgba(236,238,222,1) 30%,rgba(244,245,236,1) 47%,rgba(246,247,239,1) 56%,rgba(246,247,239,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(239,241,227,1) 0%,rgba(235,237,221,1) 10%,rgba(235,237,220,1) 24%,rgba(236,238,222,1) 30%,rgba(244,245,236,1) 47%,rgba(246,247,239,1) 56%,rgba(246,247,239,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff1e3', endColorstr='#f6f7ef',GradientType=0 ); /* IE6-9 */
+		position: relative;
+		display: block;
+		box-sizing: border-box;
+		padding: 13px 28px;
+		min-width: 243px;
+		vertical-align: top;
+		&:hover {
+			text-decoration: none;
+		}
+		&.active {
+			padding: 10px 28px;
+			background: #f6f7ef;
+			border: 3px solid #2884be;
+			cursor: default;
+			&:before {
+				content: '';
+				position: absolute;
+				background: url(../img/object_triangle.png) 0 0 no-repeat;
+				width: 99px;
+				height: 23px;
+				bottom: -23px;
+				left: 50%;
+				right: 0;
+				margin-left: -48px;
+			}
+		}
+	}
+	&__item {
+		text-align: left;
+		margin: 0 12px;
+	}
+	&__type {
+		color: #323232;
+		font-size: 20px;
+		margin: 0 0 -2px 0;
+	}
+	&__name {
+		color: #2884be;
+		margin: 0 0 0 -12px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
+#estate__map {
+	height: 363px;
+	width: 100%;
+	margin: 20px 0px;
+}
+// блок одного обьекта
+.estate {
+	&__slider-block {
+		margin-bottom: 40px;
+	}
+	&__finish {
+		float: right;
+		color: #749910;
+		font-size: 16px;
+		position: relative;
+		padding-left: 30px;
+		margin: 30px 0 0 0;
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../img/ok.png) 0 0 no-repeat;
+			width: 23px;
+			height: 19px;
+			top: 11px;
+			left: -3px;
+		}
+	}
+	&__slider-wrap {
+		top: -383px;
+		position: relative;
+		display: inline-block;
+	}
+}
+// превью слайдера
+.bx-pager {
+	&__block {
+		margin-left: -30px;
+		margin-top: -383px;
+	}
+	&__link {
+		display: inline-block;
+		margin: 20px 0 0 30px;
+		float: left;
+	}
+	&__img {
+		max-height: 111px;
+		max-width: 162px;
+		display: block;
+		margin: auto;
+	}
+}
+// отдел продаж
+.department {
+	&__section {
+		background: url(../img/blue_bg2.jpg) 0 0 no-repeat;
+		background-size: cover;
+		padding: 30px 0 84px 0;
+		margin-top: 10px;
+	}
+	&__btn {
+		width: 230px;
+		line-height: 64px;
+		float: right;
+		text-align: center;
+		font-family: 'PT Sans';
+		display: block;
+		border-radius: 10px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: bold;
+		background: #8ab64a;
+		margin: 185px 0 0 0;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:focus,
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			background: lighten(#8ab64a, 6%);
+		}
+	}
+	&__title {
+		color: #fff;
+		font-size: 52px;
+		font-family: 'Roboto Medium';
+		margin: 21px 0 44px 0;
+	}
+	&__img {
+		border-radius: 15px;
+		float: left;
+		display: block;
+		max-width: 152px;
+		max-height: 152px;
+	}
+	&__block-inner {
+		margin: -6px 0 0 196px;
+	}
+	&__person-name {
+		color: #fff;
+		font-family: 'Roboto Medium';
+		font-size: 30px;
+		letter-spacing: 1px;
+		margin: 0 0 18px 0;
+	}
+	&__position {
+		color: #fff;
+		font-size: 20px;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	&__phone {
+		color: #fff;
+		font-size: 30px;
+		margin: 0;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	&__email {
+		color: #fff;
+		font-size: 20px;
+		display: inline-block;
+		border-bottom: 1px solid;
+		line-height: 24px;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+// текст после обьекта
+.estate {
+	&__subtitle {
+		color: #323232;
+		font-size: 30px;
+		font-family: 'Roboto Medium';
+		line-height: 50px;
+		margin: -7px 0 24px 0;
+	}
+	&__description-text {
+		font-size: 20px;
+		color: #323232;
+		margin: 0 0 48px 65px;
+		line-height: 38px;
+		position: relative;
+	}
+	&__table {
+		width: 100%;
+		margin-bottom: 44px;
+		tr {
+			border-bottom: 1px solid #fff;
+		}
+		th {
+			color: #84898c;
+			font-size: 20px;
+			padding: 12px 66px;
+			background: #f5f5f5;
+			font-weight: normal;
+		}
+		td {
+			font-size: 20px;
+			padding: 12px 66px;
+			background: #ececec;
+		}
+	}
+	&__left-block {
+		position: absolute;
+		width: 145px;
+		left: -38%;
+	    top: -15px;
+	    line-height: 20px;
+	}
+	&__left-img {
+		display: block;
+		margin-bottom: 13px;
+	}
+	&__text-link {
+		font-size: 50%;
+		border-bottom: 1px solid;
+		color: #2884be;
 		&:hover {
 			border-bottom: 1px solid transparent;
 			text-decoration: none;
