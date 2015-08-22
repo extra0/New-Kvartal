@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta description="">
+    <meta keywords="">
+    <link rel="shortcut icon" type="images/vnd.microsoft.icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <title></title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a>
+          <ul class="header__menu list-inline">
+            <li class="header__menu-item"><a href="#" class="header__menu-link">О компании</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Наши объекты</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">услуги</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Соц.партнерство</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Фотогалерея</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Спец.предложения</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main__content">
+        <div class="main__underhead">
+          <div class="container">
+            <div class="row">
+              <div class="phone__block col-xs-8"><img src="img/content/ava.png" alt="" class="phone__operator">
+                <div class="phone__inner">
+                  <p onclick="window.location.href='tel:+83467318477';" class="phone__number _black">8 3467 <span class="phone__sufix">318-477</span></p>
+                  <p class="phone__text _black">Приемная</p>
+                </div>
+                <div class="phone__inner">
+                  <p onclick="window.location.href='tel:+83467318477';" class="phone__number _black">8 3467 <span class="phone__sufix">318-477</span></p>
+                  <p class="phone__text _black">Отдел продаж</p>
+                </div>
+                <div class="phone__call-me-block"><a href="#" class="phone__call-me"><span class="border">Заказать<br>обратный звонок</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map__block">
+          <div class="map__shadow"></div>
+          <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+          <script>
+            ymaps.ready(init);
+            function init () {
+                var myMap = new ymaps.Map('map', {
+                        center: [61.00152809, 69.00283838],
+                        zoom: 15,
+                        controls:[]
+                    });
+            
+            	    myMap.behaviors.disable('scrollZoom');
+            		
+            		//закрываем активный балун
+            		myMap.events.add('click', function (e) {  
+            		    myMap.balloon.close();
+            		});
+            
+                    myPlacemark = new ymaps.Placemark([60.99916567, 69.00558755], {
+                        // Контент балуна
+                        balloonContent: '<div class="map__inner"><p class="map__inner-head">Главный офис</p><p class="map__city">Ханты-Мансийск,</p><p class="map__address">ул. Пушкина, дом 39</p><p class="map__phone" onclick="window.location.href="tel:+8367920555";">8 (3467) 930 - 555</p><a href="mailto:kvartal860@yandex.ru" class="map__email">kvartal860@yandex.ru</a></div>'
+                    }, {
+                         // Изображение иконки метки
+                        iconLayout: 'default#image',
+                        iconImageHref: 'img/marker.png',
+                        // Размеры изображения иконки
+                        iconImageSize: [20, 30],  
+                        // смещение картинки
+                        iconImageOffset: [-10, -30],
+                        // Размеры содержимого балуна
+                        balloonContentSize: [377, 0],
+                        // Задаем макет балуна - пользовательская картинка с контентом
+                        balloonLayout: "default#imageWithContent",
+                        // Картинка балуна
+                        //- balloonImageHref: 'img/map_obj_wrap.png',
+                        // Смещение картинки балуна
+                        balloonImageOffset: [-20, -265],
+                        // Размеры картинки балуна
+                        //- balloonImageSize: [255, 0],
+                        // Балун не имеет тени
+                        balloonShadow: true
+                    });
+            
+            		myPlacemark_one = new ymaps.Placemark([61.00327401, 68.99789476], {
+                        // Контент балуна
+                        balloonContent: '<div class="map__inner"><p class="map__inner-head">Офис продаж</p><p class="map__city">Ханты-Мансийск,</p><p class="map__address">ул. Промышленная, дом 5</p><p class="map__phone" onclick="window.location.href="tel:+83467318477";">8 (3467) 318 - 477</p></div>'
+                    }, {
+                         // Изображение иконки метки
+                        iconLayout: 'default#image',
+                        iconImageHref: 'img/marker.png',
+                        // Размеры изображения иконки
+                        iconImageSize: [20, 30],  
+                        // смещение картинки
+                        iconImageOffset: [-10, -30],
+                        // Размеры содержимого балуна
+                        balloonContentSize: [377, 0],
+                        // Задаем макет балуна - пользовательская картинка с контентом
+                        balloonLayout: "default#imageWithContent",
+                        // Картинка балуна
+                        //- balloonImageHref: 'img/map_obj_wrap.png',
+                        // Смещение картинки балуна
+                        balloonImageOffset: [-20, -237],
+                        // Размеры картинки балуна
+                        //- balloonImageSize: [255, 0],
+                        // Балун не имеет тени
+                        balloonShadow: true
+                    });
+            	var tileUrlTemplate = 'hotspot_data/%z/tile_x=%x&y=%y',
+            	        // Шаблон callback-функции, в которую сервер будет оборачивать данные тайла.
+            	        // Пример callback-функции после подстановки - 'testCallback_tile_x_1_y_2_z_9'.
+            	        keyTemplate = 'testCallback_tile_%c',
+            	        // URL тайлов картиночного слоя.
+            	        // Пример URL после подстановки -
+            	        // '.../hotspot_layer/images/9/tile_x=1&y=2.png'.
+            	        imgUrlTemplate = 'img/map_bg.png',
+            	        // Создадим источник данных слоя активных областей.
+            	        objSource = new ymaps.hotspot.ObjectSource(tileUrlTemplate, keyTemplate),
+            	        // Создаем картиночный слой и слой активных областей.
+            	        imgLayer = new ymaps.Layer(imgUrlTemplate, {tileTransparent: true}),
+            	        hotspotLayer = new ymaps.hotspot.Layer(objSource, {cursor: 'help'});
+            
+            	    // Добавляем слои на карту.
+            	    myMap.layers.add(hotspotLayer);
+            	    myMap.layers.add(imgLayer);
+                // Добавляем метки на карту
+                myMap.geoObjects
+                	.add(myPlacemark)
+                	.add(myPlacemark_one);
+            }
+          </script>
+          <div id="map"></div>
+        </div>
+        <div class="person__section">
+          <div class="container">
+            <h1 class="title">ключевые сотрудники</h1>
+            <div class="row">
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">Генеральный директор</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p2.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Курганский Юрий Владимирович</h3>
+                  <p class="person__position">Заместитель директора по строительству</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p3.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Устюгова Наталья Андреевна</h3>
+                  <p class="person__position">Заместитель директора по финансам</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">Генеральный директор</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">Генеральный директор</p><a href="mailto:psvetik08@mail.ru" class="person__email">psvetik08@mail.ru</a>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">Генеральный директор</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">Генеральный директор</p>
+                </div>
+              </div>
+              <div class="person__block col-xs-6"><img src="img/content/p1.jpg" alt="" class="person__img">
+                <div class="person__block-inner">
+                  <h3 class="person__name">Балесный Василий Иванович</h3>
+                  <p class="person__position">начальник производственной базы, руководитель бетонно-растворного узла</p><a href="mailto:psvetik08@mail.ru" class="person__email">psvetik08@mail.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buffer"></div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <ul class="footer__menu list-unstyled col-xs-5">
+            <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Выбор квартиры</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Наши услуги </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Фотогалерея</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Соц.партнерство </a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Спец.предложения</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+          <div class="footer__phone-block">
+            <div class="footer__phone-item">
+              <p class="footer__phone">+7 812<span onclick="window.location.href='tel:+83467318477';" class="footer__phone-sufix">643 44 07</span></p>
+              <p class="footer__phone-name">Приемная</p>
+            </div>
+            <div class="footer__phone-item">
+              <p class="footer__phone">+7 812<span onclick="window.location.href='tel:+83467318477';" class="footer__phone-sufix">643 44 07</span></p>
+              <p class="footer__phone-name">Офис отдела продаж</p>
+            </div>
+            <div class="footer__copyright">
+              <p class="footer__copyright-text">© 2014 ООО Квартал</p>
+              <p class="footer__copyright-develop">Разработка сайта - студия <a href="#" class="footer__copyright-link">Максимус</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gallery_plugin.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
