@@ -67,7 +67,7 @@ $(function() {
 			$('.full__screen').height($(window).height())
 		];
 	});
-
+	
 	// ресайз окна
 	return [
 		$('.video__play').width($(window).width()),

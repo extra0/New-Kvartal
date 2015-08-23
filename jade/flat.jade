@@ -51,21 +51,21 @@ block content
 				ymaps.ready(init);
 				function init () {
 				    var myMap = new ymaps.Map('estate__map', {
-				            center: [61.00152809, 69.00283838],
+				            center: [61.00152809, 69.00000838],
 				            zoom: 15,
 				            controls:[]
 				        });
 
-					    myMap.behaviors.disable('scrollZoom');
+					    //- myMap.behaviors.disable('scrollZoom');
 						
 						//закрываем активный балун
-						myMap.events.add(function (e) {  
+						myMap.events.add('click', function (e) {  
 						    myMap.balloon.open();
 						});
 
 				        myPlacemark = new ymaps.Placemark([60.99916567, 69.00558755], {
 				            // Контент балуна
-				            balloonContent: '<div class="map__inner"><p class="map__inner-head">Главный офис</p><p class="map__city">Ханты-Мансийск,</p><p class="map__address">ул. Пушкина, дом 39</p><p class="map__phone" onclick="window.location.href="tel:+8367920555";">8 (3467) 930 - 555</p><a href="mailto:kvartal860@yandex.ru" class="map__email">kvartal860@yandex.ru</a></div>'
+				            balloonContent: '<div class="map__inner"><p class="map__city">Ханты-Мансийск,</p><p class="map__address">2-я улица Строителей, д.25, кв.12</p></div>'
 				        }, {
 				             // Изображение иконки метки
 				            iconLayout: 'default#image',
@@ -81,13 +81,13 @@ block content
 				            // Картинка балуна
 				            //- balloonImageHref: 'img/map_obj_wrap.png',
 				            // Смещение картинки балуна
-				            balloonImageOffset: [-20, -265],
+				            balloonImageOffset: [-20, -175],
 				            // Размеры картинки балуна
 				            //- balloonImageSize: [255, 0],
 				            // Балун не имеет тени
 				            balloonShadow: true
 				        });
-
+						
 					var tileUrlTemplate = 'hotspot_data/%z/tile_x=%x&y=%y',
 					        // Шаблон callback-функции, в которую сервер будет оборачивать данные тайла.
 					        // Пример callback-функции после подстановки - 'testCallback_tile_x_1_y_2_z_9'.
@@ -107,6 +107,7 @@ block content
 					    myMap.layers.add(imgLayer);
 				    // Добавляем метки на карту
 				    myMap.geoObjects.add(myPlacemark);
+				    myPlacemark.balloon.open();
 				}
 			#estate__map
 			.estate__slider-block
