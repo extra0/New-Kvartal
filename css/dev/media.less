@@ -1,9 +1,8 @@
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 768px) {
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
 	.header {
-		&__logo {
-			// display: inline-block;
-			// max-width: 100px;
-		}
 		&__menu {
 			position: absolute;
 			top: 53px;
@@ -158,6 +157,26 @@
 			margin-left: 0;
 		}
 	}
+	.blockquote {
+		&__text {
+			font-size: 22px;
+			line-height: 35px;
+		}
+	}
+	.about {
+		&__price {
+			&._marg {
+				margin: 0 6% 0 0px;
+				text-align: left;
+				padding-left: 34px;
+			}
+		}
+		&__text {
+			&._height {
+				margin: -6px 0 70px 0;
+			}
+		}
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header {
@@ -172,7 +191,7 @@
 	.phone {
 		&__block {
 			&._main {
-				margin: 19px 0 46px 25.6%;
+				margin: 19px 0 46px 25.3%;
 			}
 		}
 	}
@@ -236,6 +255,22 @@
 		}
 		&__copyright {
 			margin: 34px 0 0 33px;
+		}
+	}
+	.blockquote {
+		&__text {
+			font-size: 24px;
+			line-height: 40px;
+		}
+	}
+}
+@media (min-width: 993px) and (max-width: 1010px) {
+	.header {
+		&__menu {
+			display: inline-block;
+		}
+		&__menu-btn {
+			display: none!important;
 		}
 	}
 }

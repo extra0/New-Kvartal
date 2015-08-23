@@ -43,6 +43,7 @@ $(function() {
 		btn.hide();
 	}
 	$(window).resize(function(){
+		var btn = $('.header__menu-btn');
 		if ($(this).width() < 992) {
 			btn.show();
 		} else {
