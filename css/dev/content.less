@@ -156,32 +156,32 @@
 		&._gallery {
 			top: 426px;
 			left: 618px;
-		    z-index: 19;
 		}
 		&._museum {
 			top: 500px;
 			left: 580px;
-			z-index: 18;
 		}
 		&._temple {
 			top: 589px;
 			left: 481px;
-			z-index: 17;
 		}
 		&._etnos {
 			top: 600px;
 			left: 284px;
-		    z-index: 16;
 		}
 		&._biatlon {
 			top: 880px;
 		    left: 487px;
-			z-index: 15;
 		}
 		&._freedom {
 			top: 1337px;
 			left: 708px;
-			z-index: 14;
+			z-index: 20;
+		}
+		&._coast {
+			top: 610px;
+			left: 670px;
+			z-index: 20;
 		}
 	}
 	&__link {
@@ -256,94 +256,13 @@
 		margin: 3px 0 0 35px;
 	}
 	&__inner {
-		display: none;
 		background: #f5f6ed;
 		border-radius: 5px;
 		width: 223px;
 		position: absolute;
 		&._young {
-			top: -19px;
-			left: -243px;
-			&:before {
-				content: '';
-				position: absolute;
-				background: url(../img/triangle.png) 0 0 no-repeat;
-				width: 35px;
-				height: 37px;
-				top: 29px;
-			    right: -35px;
-				z-index: 21;
-			}
-		}
-		&._gallery {
-			top: -20px;
-			left: -240px;
-			&:before {
-				content: '';
-				position: absolute;
-				background: url(../img/triangle.png) 0 0 no-repeat;
-				width: 35px;
-				height: 37px;
-				top: 29px;
-			    right: -35px;
-				z-index: 21;
-			}
-		}
-		&._museum {
-			top: -20px;
-			left: -240px;
-			&:before {
-				content: '';
-				position: absolute;
-				background: url(../img/triangle.png) 0 0 no-repeat;
-				width: 35px;
-				height: 37px;
-				top: 29px;
-			    right: -35px;
-				z-index: 21;
-			}
-		}
-		&._temple {
-			top: -20px;
-			left: 47px;
-			&:before {
-				content: '';
-			    position: absolute;
-			    background: url(../img/triangle_down.png) 0 0 no-repeat;
-			    width: 35px;
-			    height: 37px;
-			    top: 29px;
-			    right: 223px;
-			    z-index: 21;
-			    -moz-transform: rotate(90deg);
-			    -webkit-transform: rotate(90deg);
-			    -o-transform: rotate(90deg);
-			    -ms-transform: rotate(90deg);
-			    transform: rotate(90deg);
-			}
-		}
-		&._etnos {
-			top: 46px;
-			left: -41px;
-			&:before {
-				content: '';
-				position: absolute;
-				background: url(../img/triangle.png) 0 0 no-repeat;
-				width: 35px;
-				height: 37px;
-				top: -36px;
-				right: 135px;
-				z-index: 21;
-				-moz-transform: rotate(-90deg);
-				-webkit-transform: rotate(-90deg);
-				-o-transform: rotate(-90deg);
-				-ms-transform: rotate(-90deg);
-				transform: rotate(-90deg);
-			}
-		}
-		&._biatlon {
-			top: -20px;
-			left: -240px;
+			top: -13px;
+		    left: -239px;
 			&:before {
 				content: '';
 				position: absolute;
@@ -356,8 +275,23 @@
 			}
 		}
 		&._freedom {
-			top: -263px;
-			left: -11px;
+			top: -257px;
+			left: -5px;
+			&:before {
+				content: '';
+			    position: absolute;
+			    background: url(../img/triangle_down.png) 0 0 no-repeat;
+			    width: 35px;
+			    height: 37px;
+			    top: 100%;
+			    right: 166px;
+			    z-index: 21;
+			}
+		}
+		&._coast {
+			top: -256px;
+			left: -6px;
+			z-index: 14;
 			&:before {
 				content: '';
 			    position: absolute;

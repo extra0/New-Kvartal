@@ -9,19 +9,19 @@ $(function() {
 	});
 
 	// появление обьектов на карте
-	$('.object__link').click(function() {
-		if ($(this).children('img').hasClass('active')) {
-			return false;
-		} else {
-			$('.object__inner').hide();
-			$('.object__circle').attr('src', 'img/circle.png');
-			$('.object__circle').removeClass('active');
-			$(this).parent().find('.object__inner').fadeIn(500);
-			$(this).children('img').attr('src', 'img/active_circle.png');
-			$(this).children('img').addClass('active');
-			return false;
-		}
-	});
+	// $('.object__link').click(function() {
+	// 	if ($(this).children('img').hasClass('active')) {
+	// 		return false;
+	// 	} else {
+	// 		$('.object__inner').hide();
+	// 		$('.object__circle').attr('src', 'img/circle.png');
+	// 		$('.object__circle').removeClass('active');
+	// 		$(this).parent().find('.object__inner').fadeIn(500);
+	// 		$(this).children('img').attr('src', 'img/active_circle.png');
+	// 		$(this).children('img').addClass('active');
+	// 		return false;
+	// 	}
+	// });
 
 	// hover на блок с историей
 	$('.history__block').hover(function() {
@@ -66,13 +66,13 @@ $(function() {
 	});
 
 	// закрываем обьекты
-	$(document).click(function(event) {
-		if ($(event.target).closest(".object__inner").length) return;
-		$('.object__inner').fadeOut(500);
-		$('.object__circle').attr('src', 'img/circle.png');
-		$('.object__circle').removeClass('active');
-		indexClick = 0;
-		event.stopPropagation();
-	});
+	// $(document).click(function(event) {
+	// 	if ($(event.target).closest(".object__inner").length) return;
+	// 	$('.object__inner').fadeOut(500);
+	// 	$('.object__circle').attr('src', 'img/circle.png');
+	// 	$('.object__circle').removeClass('active');
+	// 	indexClick = 0;
+	// 	event.stopPropagation();
+	// });
 
 });
