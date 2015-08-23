@@ -34,28 +34,4 @@ $(function() {
 		pagerCustom: '.bx-pager__block',
 		slideWidth: 645
 	});
-
-	$(window).resize(function() {
-		return [
-			$('.video__play').width($(window).width()),
-			$('.video__play').height($(window).height()),
-			$('.video__block').width($(window).width()),
-			$('.video__block').height($(window).height()),
-			$('.full__screen').width($(window).width()),
-			$('.full__screen').height($(window).height())
-		];
-	});
-
-	// ресайз окна
-	return [
-		$('.video__play').width($(window).width()),
-		$('.video__play').height($(window).height()),
-		$('.video__block').width($(window).width()),
-		$('.video__block').height($(window).height()),
-		$('.full__screen').width($(window).width()),
-		$('.full__screen').height($(window).height())
-	];
-
-
-
 });

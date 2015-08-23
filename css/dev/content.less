@@ -1,8 +1,14 @@
 .main {
 	&__underhead {
-		margin: -86px 0 -18px 0;
+		&._index {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
 	}
 	&__content {
+		position: relative;
 		&._offers {
 			background: url(../img/confeti.png) bottom center no-repeat;
 		}
@@ -10,34 +16,26 @@
 }
 // видео блок
 .full__screen {
-	position: absolute;
-	overflow: hidden;
-	
-	min-height: 844px;
+	// overflow: hidden;
+	margin-top: -85px;
 }
 .video {
 	&__block {
 		margin: 0 auto;
 		width: 100%; 
 		z-index: -1;
-
-		min-height: 844px;
-		margin-top: -5px;
 	}
 	&__wrap {
 		position: absolute;
 	    width: 100%;
 	    height: 100%;
-	   	top: -5px;
+	   	top: 0px;
 	    background: url(../img/shadow.png) 0px -90px repeat-x;
 	    background-color: rgba(21,49,65,0.46);
-	    // min-height: 844px;
 	}
 	&__play {
 		width: 100%;
 		z-index: -1;
-
-		min-height: 844px;
 		margin-top: -43px;
 	}
 }

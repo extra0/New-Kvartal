@@ -3,48 +3,48 @@ block content
 	.main__content
 		.full__screen
 			.video__block
-				.video__wrap
-				video.video__play(loop autoplay)
+				//- .video__wrap
+				video.video__play.video-js.vjs-default-skin#example_video_1(loop autoplay data-setup="{}" preload="none")
 					source(src="video/index.mp4" type="video/mp4")
 					source(src="video/video2.webm" type="video/webm")
 					source(src="video/video2.ogg" type="video/ogg")
-		.main__underhead
+		.main__underhead._index
 			.container
-				.row
-					.phone__block._main.col-xs-8
-						img.phone__operator(src="img/content/ava.png", alt="")
-						.phone__inner
-							p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
-								span.phone__sufix 318-477
-							p.phone__text Приемная
-						.phone__inner
-							p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
-								span.phone__sufix 318-477
-							p.phone__text Отдел продаж
-						.phone__call-me-block
-							a.phone__call-me(href="#")
-								span.border Заказать<br>обратный звонок
-				.advantages__section
-					h1.title._white мы строим недвижимость для вас
-					ul.advantages__list.list-inline
-						li.advantages__block
-							img.advantages__img(src="img/head_img1.png", alt="")
-							p.advantages__text Качественные<br>и экологические<br>материалы
-						li.advantages__block
-							img.advantages__img(src="img/head_img2.png", alt="")
-							p.advantages__text Современные<br>технологии и методы<br>строительства
-						li.advantages__block
-							img.advantages__img(src="img/head_img3.png", alt="")
-							p.advantages__text Соблюдение<br>сроков<br>строительства
-						li.advantages__block
-							img.advantages__img(src="img/head_img4.png", alt="")
-							p.advantages__text Прочные<br>партнерские<br>отношения
-						li.advantages__block
-							img.advantages__img(src="img/head_img5.png", alt="")
-							p.advantages__text Забота о вас<br>и ваших близких
-					.text-center
-						a.button__down(href="#object")
-							img(src="img/mouse.png", alt="")
+					.row
+						.phone__block._main.col-xs-8
+							img.phone__operator(src="img/content/ava.png", alt="")
+							.phone__inner
+								p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
+									span.phone__sufix 318-477
+								p.phone__text Приемная
+							.phone__inner
+								p.phone__number(onclick="window.location.href='tel:+83467318477';") 8 3467 
+									span.phone__sufix 318-477
+								p.phone__text Отдел продаж
+							.phone__call-me-block
+								a.phone__call-me(href="#")
+									span.border Заказать<br>обратный звонок
+					.advantages__section
+						h1.title._white мы строим недвижимость для вас
+						ul.advantages__list.list-inline
+							li.advantages__block
+								img.advantages__img(src="img/head_img1.png", alt="")
+								p.advantages__text Качественные<br>и экологические<br>материалы
+							li.advantages__block
+								img.advantages__img(src="img/head_img2.png", alt="")
+								p.advantages__text Современные<br>технологии и методы<br>строительства
+							li.advantages__block
+								img.advantages__img(src="img/head_img3.png", alt="")
+								p.advantages__text Соблюдение<br>сроков<br>строительства
+							li.advantages__block
+								img.advantages__img(src="img/head_img4.png", alt="")
+								p.advantages__text Прочные<br>партнерские<br>отношения
+							li.advantages__block
+								img.advantages__img(src="img/head_img5.png", alt="")
+								p.advantages__text Забота о вас<br>и ваших близких
+						.text-center
+							a.button__down(href="#object")
+								img(src="img/mouse.png", alt="")
 		.object__block#object
 			.container
 				h2.title Объекты компании
