@@ -2,12 +2,10 @@ extends _layout
 block content
 	.main__content
 		.full__screen
-			.video__block
-				//- .video__wrap
-				video.video__play.video-js.vjs-default-skin#example_video_1(loop autoplay data-setup="{}" preload="none")
-					source(src="video/index.mp4" type="video/mp4")
-					source(src="video/video2.webm" type="video/webm")
-					source(src="video/video2.ogg" type="video/ogg")
+			video.video__play.video-js.vjs-default-skin#example_video_1(loop autoplay data-setup="{}" preload="none" poster="img/bg.jpg")
+				source(src="video/video2.mp4" type="video/mp4")
+				source(src="video/video2.webm" type="video/webm")
+				source(src="video/video2.ogg" type="video/ogg")
 		.main__underhead._index
 			.container
 					.row
