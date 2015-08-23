@@ -14,7 +14,7 @@
   <body>
     <div class="main-wrapper">
       <header class="header">
-        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a>
+        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a><a href="#" class="header__menu-btn"></a>
           <ul class="header__menu list-inline">
             <li class="header__menu-item"><a href="#" class="header__menu-link">О компании</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-link">Наши объекты</a></li>
@@ -77,7 +77,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <ul class="footer__menu list-unstyled col-xs-5">
+          <ul class="footer__menu list-unstyled col-lg-5 col-md-6">
             <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Выбор квартиры</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Наши услуги </a></li>
@@ -86,7 +86,7 @@
             <li class="footer__item"><a href="#" class="footer__link">Спец.предложения</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
           </ul>
-          <div class="footer__phone-block">
+          <div class="footer__phone-block col-md-6">
             <div class="footer__phone-item">
               <p class="footer__phone">+7 812<span onclick="window.location.href='tel:+83467318477';" class="footer__phone-sufix">643 44 07</span></p>
               <p class="footer__phone-name">Приемная</p>
@@ -115,23 +115,19 @@
     <script>
         // Once the video is ready
             _V_("example_video_1").ready(function(){
-              
               // Store the video object
               var myPlayer = this; 
               // Make up an aspect ratio
               var aspectRatio = 9/16; 
-      
               function resizeVideoJS(){
                 var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
                 myPlayer.width(width).height( width * aspectRatio );
       
               }
-              
                // Initialize resizeVideoJS()
               resizeVideoJS();
               // Then on resize call resizeVideoJS()
               window.onresize = resizeVideoJS; 
-      
             });
     </script>
   </body>

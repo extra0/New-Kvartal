@@ -14,7 +14,7 @@
   <body>
     <div class="main-wrapper">
       <header class="header">
-        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a>
+        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a><a href="#" class="header__menu-btn"></a>
           <ul class="header__menu list-inline">
             <li class="header__menu-item"><a href="#" class="header__menu-link">О компании</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-link">Наши объекты</a></li>
@@ -37,7 +37,7 @@
         <div class="main__underhead _index">
           <div class="container">
             <div class="row">
-              <div class="phone__block _main col-xs-8"><img src="img/content/ava.png" alt="" class="phone__operator">
+              <div class="phone__block _main col-lg-8 col-md-9"><img src="img/content/ava.png" alt="" class="phone__operator">
                 <div class="phone__inner">
                   <p onclick="window.location.href='tel:+83467318477';" class="phone__number">8 3467 <span class="phone__sufix">318-477</span></p>
                   <p class="phone__text">Приемная</p>
@@ -125,16 +125,16 @@
         <div class="about__block">
           <div class="container">
             <div class="row">
-              <div class="about__price col-xs-2"><img src="img/price.png" alt="" class="about__img"><a href="#" class="about__price-link"><span class="border">Прайс-лист<br>на строительные<br>услуги</span></a></div>
-              <div class="about__center col-xs-6">
+              <div class="about__price col-lg-2"><img src="img/price.png" alt="" class="about__img"><a href="#" class="about__price-link"><span class="border">Прайс-лист<br>на строительные<br>услуги</span></a></div>
+              <div class="about__center col-lg-6 col-md-7">
                 <h2 class="title">о нашей компании</h2>
                 <p class="about__text">При строительстве наших объектов мы внимательно относимся к комфорту и требованиям покупателей, при этом не забывая об окружающей среде, пунктуально соблюдая строительные нормы, правила и экологические стандарты.</p>
                 <p class="about__text">В 2011-2012 годах ведется строительство Малосемейного общежития № 2 в г.Ханты-Мансийске, завершено строительство I очереди малоэтажной застройки Жилого комплекса по ул.Промышленная в г.Ханты-Мансийске.</p><a href="#" class="about__link">Подробнее</a>
               </div>
-              <div class="about__news col-xs-2">
+              <div class="about__news col-lg-2">
                 <p class="about__news-date">4 февраля 2015</p><a href="#" class="about__news-link"><span class="border">Сдали в эксплуатацию 3й корпус нашего Жилого Комплекса!</span></a>
               </div>
-              <div class="about__brand col-xs-12"><img src="img/brands.png" alt="" class="about__brand"></div>
+              <div class="about__brand col-lg-12"><img src="img/brands.png" alt="" class="about__brand"></div>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <ul class="footer__menu list-unstyled col-xs-5">
+          <ul class="footer__menu list-unstyled col-lg-5 col-md-6">
             <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Выбор квартиры</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Наши услуги </a></li>
@@ -153,7 +153,7 @@
             <li class="footer__item"><a href="#" class="footer__link">Спец.предложения</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
           </ul>
-          <div class="footer__phone-block">
+          <div class="footer__phone-block col-md-6">
             <div class="footer__phone-item">
               <p class="footer__phone">+7 812<span onclick="window.location.href='tel:+83467318477';" class="footer__phone-sufix">643 44 07</span></p>
               <p class="footer__phone-name">Приемная</p>
@@ -182,23 +182,19 @@
     <script>
         // Once the video is ready
             _V_("example_video_1").ready(function(){
-              
               // Store the video object
               var myPlayer = this; 
               // Make up an aspect ratio
               var aspectRatio = 9/16; 
-      
               function resizeVideoJS(){
                 var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
                 myPlayer.width(width).height( width * aspectRatio );
       
               }
-              
                // Initialize resizeVideoJS()
               resizeVideoJS();
               // Then on resize call resizeVideoJS()
               window.onresize = resizeVideoJS; 
-      
             });
     </script>
   </body>
