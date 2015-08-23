@@ -12,12 +12,17 @@
 .full__screen {
 	position: absolute;
 	overflow: hidden;
+	
+	min-height: 844px;
 }
 .video {
 	&__block {
 		margin: 0 auto;
 		width: 100%; 
 		z-index: -1;
+
+		min-height: 844px;
+		margin-top: -5px;
 	}
 	&__wrap {
 		position: absolute;
@@ -25,11 +30,15 @@
 	    height: 100%;
 	   	top: -5px;
 	    background: url(../img/shadow.png) 0px -90px repeat-x;
-	    background-color: rgba(21,49,65,0.46)
+	    background-color: rgba(21,49,65,0.46);
+	    // min-height: 844px;
 	}
 	&__play {
 		width: 100%;
 		z-index: -1;
+
+		min-height: 844px;
+		margin-top: -43px;
 	}
 }
 // блок телефонов под шапкой
@@ -136,7 +145,8 @@
 }
 // кнопка спуска вниз 
 .button__down {
-	
+	padding-bottom: 110px;
+	display: inline-block;
 }
 // блок с обьектами
 .object {
