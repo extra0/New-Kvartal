@@ -4,7 +4,7 @@ block content
 		.main__underhead
 			.container
 				.row
-					.phone__block._main.col-lg-8.col-md-9
+					.phone__block.col-lg-8.col-md-9
 						img.phone__operator(src="img/content/ava.png", alt="")
 						.phone__inner
 							p.phone__number._black(onclick="window.location.href='tel:+83467318477';") 8 3467 
@@ -17,6 +17,11 @@ block content
 						.phone__call-me-block
 							a.phone__call-me(href="#")
 								span.border Заказать<br>обратный звонок
+							.phone__window-call
+								form.phone__form(action="#" method="post")
+									input.phone__input.mask(type="text" required placeholder="Номер телефона")
+									p.phone__window-call-text Наш менеджер перезвонит вам в ближайшее время и мы сможем обсудить интересующие вас детали.
+									button.phone__submit(type="submit") Отправить
 				.advantages__section
 					h1.title мы строим недвижимость для вас
 					ul.advantages__list.list-inline

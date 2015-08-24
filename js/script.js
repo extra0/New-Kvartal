@@ -58,12 +58,12 @@ $(function() {
 	});
 
 	// закрываем меню вне его области
-	$(document).click(function(event) {
-		if ($(event.target).closest(".header__menu").length) return;
-		$('.header__menu').slideUp(500);
-		indexClick = 0;
-		event.stopPropagation();
-	});
+	// $(document).click(function(event) {
+	// 	if ($(event.target).closest(".header__menu").length) return;
+	// 	$('.header__menu').slideUp(500);
+	// 	indexClick = 0;
+	// 	event.stopPropagation();
+	// });
 
 	// закрываем обьекты
 	// $(document).click(function(event) {
@@ -75,4 +75,19 @@ $(function() {
 	// 	event.stopPropagation();
 	// });
 
+	// закрываем окно звонка
+	$(document).click(function(event) {
+		if ($(event.target).closest(".phone__window-call").length) return;
+		$('.phone__window-call').fadeOut(500);
+		indexClick = 0;
+		event.stopPropagation();
+	});
+	
+	// окно обратного звонка
+	$('.phone__call-me').click(function(){
+		$('.phone__window-call').fadeToggle(500);
+		return false;
+	});
+
+	$('.mask').mask('+9 (999) 999-99-99');
 });
