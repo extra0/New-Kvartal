@@ -90,4 +90,14 @@ $(function() {
 	});
 
 	$('.mask').mask('+9 (999) 999-99-99');
+
+	// меню на мобле до 768 точек
+	// if ($(window).width() < 768) {
+	// 	$('.header__menu').addClass('_fixed');
+	// 	$('.header__menu-btn').click(function(){
+	// 		$('.main-wrapper').toggleClass('_fixed');
+	// 		$('body').toggleClass('_fixed');
+	// 		$('.header__menu').css('left', $(window).width() - 230);
+	// 	});
+	// }
 });
