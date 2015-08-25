@@ -95,7 +95,7 @@
 	}
 	.title {
 		font-size: 38px;
-		padding: 0 30px;
+		padding: 0 5px;
 	}
 	.about {
 		&__block {
@@ -292,6 +292,14 @@
 			margin: 30px auto -30px auto;
 		}
 	}
+	.offers {
+		&__block {
+			width: 90%;
+			display: block;
+			max-width: 280px;
+			margin: 0 auto 20px auto;
+		}
+	}
 }
 @media (min-width: 500px) and (max-width: 767px) {
 	.footer {
@@ -405,6 +413,27 @@
 				width: 45%;
 				margin: 0 12px;
 			}
+		}
+	}
+	.offers {
+		&__block {
+			width: 27%;
+			display: inline-block;
+			max-width: 280px;
+			margin: 0 2%;
+		}
+		&__block-inner {
+			min-height: 213px;
+		}
+		&__img {
+			max-height: 100px;
+		}
+		&__link {
+			font-size: 16px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 21px;
 		}
 	}
 }
