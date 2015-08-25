@@ -1109,3 +1109,31 @@
 		}
 	}
 }
+// блок контактов вне карты
+.contact {
+	&__block-outside {
+		display: none;
+		.map__inner {
+			margin: 20px auto;
+			width: 100%;
+			&:before {
+				display: none;
+			}
+		}
+		.map__inner-head {
+			font-size: 22px;
+		}
+		.map__address, .map__city {
+			font-size: 16px;
+			margin: 0 0 0px 0;
+		}
+		.map__phone {
+			margin: 6px 0 5px 0;
+			font-size: 22px;
+		}
+		.map__email {
+			line-height: 18px;
+			font-size: 16px;
+		}
+	}
+}
