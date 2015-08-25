@@ -8,6 +8,8 @@ $(function() {
 		}, 1000);
 	});
 
+	$('.fancy').fancybox();
+
 	// появление обьектов на карте
 	// $('.object__link').click(function() {
 	// 	if ($(this).children('img').hasClass('active')) {

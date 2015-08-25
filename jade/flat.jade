@@ -182,4 +182,16 @@ block content
 							p.department__position Менеджер по продажам
 							p.department__phone(onclick="window.location.href='tel:+78432676111';") +7 (843) 267-61-11
 							a.department__email(href="mailto:andrey.dashin@kvartal.ru") andrey.dashin@kvartal.ru
-					a.department__btn.col-xs-offset-4(href="#") Оставить заявку
+					a.department__btn.col-xs-offset-4.fancy(href="#order") Оставить заявку
+					#order
+						.order__block
+							h2.order__title Оставить заявку
+							form.order__form(action="#" method="post")
+								p.order__text Мы подберем подходящие вам варианты и перезвоним в ближайшее время.
+								span.order__text Меня зовут
+								input.order__input._name(type="text" reqiured placeholder="ваше имя")
+								span.order__text , меня интересует
+								textarea.order__message(placeholder="расскажите о квартире своей мечты" reqiured)
+								span.order__text Свяжитесь со мной по телефону :
+								input.order__input._phone.mask(type="text" reqiured placeholder="номер телефона")
+								button.phone__submit._order(type="submit") Отправить

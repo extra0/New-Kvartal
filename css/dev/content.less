@@ -151,6 +151,9 @@
 		-ms-transition: background 0.4s ease;
 		-o-transition: background 0.4s ease;
 		transition: background 0.4s ease;
+		&._order {
+			margin-top: 20px;
+		}
 		&:hover {
 			background: darken(#5687be, 5%);
 		}
@@ -1135,5 +1138,58 @@
 			line-height: 18px;
 			font-size: 16px;
 		}
+	}
+}
+// окно заявки
+#order{
+	background: #f6f7ef;
+	padding: 32px 40px;
+	border-radius: 5px;
+	display: none;
+}
+.order {
+	&__title {
+		text-transform: uppercase;
+		font-size: 32px;
+		font-weight: bold;
+		margin: 0 0 15px;
+		letter-spacing: -1px;
+		color: #161616;
+	}
+	&__block {
+		width: 590px;
+	}
+	&__text {
+		font-size: 16px;
+		margin: 0 0 15px;
+		color: #161616;
+	}
+	&__form {
+		max-width: 490px;
+	}
+	&__input {
+		border: 1px solid #bdbdbd;
+		box-shadow: inset 1px 12px 8px -11px #bdbdbd;
+		height: 36px;
+		box-sizing: border-box;
+		padding: 0 10px;
+		margin: 0 5px;
+		font-size: 16px;
+		margin-bottom: 10px;
+		&._name {
+			width: 251px;
+		}
+		&._phone {
+			width: 224px;
+		}
+	}
+	&__message {
+		resize: none;
+		box-shadow: inset 1px 12px 8px -11px #bdbdbd;
+		width: 99%;
+		height: 78px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		padding: 10px;
 	}
 }

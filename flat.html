@@ -210,7 +210,19 @@
                   <p class="department__position">Менеджер по продажам</p>
                   <p onclick="window.location.href='tel:+78432676111';" class="department__phone">+7 (843) 267-61-11</p><a href="mailto:andrey.dashin@kvartal.ru" class="department__email">andrey.dashin@kvartal.ru</a>
                 </div>
-              </div><a href="#" class="department__btn col-xs-offset-4">Оставить заявку</a>
+              </div><a href="#order" class="department__btn col-xs-offset-4 fancy">Оставить заявку</a>
+              <div id="order">
+                <div class="order__block">
+                  <h2 class="order__title">Оставить заявку</h2>
+                  <form action="#" method="post" class="order__form">
+                    <p class="order__text">Мы подберем подходящие вам варианты и перезвоним в ближайшее время.</p><span class="order__text">Меня зовут</span>
+                    <input type="text" reqiured placeholder="ваше имя" class="order__input _name"><span class="order__text">, меня интересует</span>
+                    <textarea placeholder="расскажите о квартире своей мечты" reqiured class="order__message"></textarea><span class="order__text">Свяжитесь со мной по телефону :</span>
+                    <input type="text" reqiured placeholder="номер телефона" class="order__input _phone mask">
+                    <button type="submit" class="phone__submit _order">Отправить</button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
