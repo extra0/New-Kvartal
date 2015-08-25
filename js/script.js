@@ -58,7 +58,7 @@ $(function() {
 		}
 
 		// переопределение отступа для бокового меню на мобле
-		$('.mobile__menu').css('left', $(window).width() + 17);
+		$('.mobile__menu').css('left', $(window).width());
 	});
 
 	if ($(window).width() < 992 && $(window).width() > 767) {
@@ -106,11 +106,11 @@ $(function() {
 	// меню на мобле до 768 точек
 	if ($(window).width() < 768) {
 		$('.mobile__menu').addClass('_fixed');
-		$('.mobile__menu').css('left', $(window).width() + 17);
+		$('.mobile__menu').css('left', $(window).width());
 		$('.header__menu-btn').click(function(){
 			$('.main-wrapper').toggleClass('_fixed');
 			$('.video__play').toggleClass('ml');
-			$('body').toggleClass('_fixed');
+			// $('body').toggleClass('_fixed');
 			return false;
 		});
 	}

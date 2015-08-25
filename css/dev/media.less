@@ -19,12 +19,12 @@
 			display: none;
 		}
 	}
-	.mobile {
-		
-	}
 	.main {
 		&__content {
-			margin-top: 33px;
+			margin-top: -10px;
+			&._index {
+				margin-top: 33px;
+			}
 		}
 	}
 	.advantages__section {
@@ -34,6 +34,7 @@
 		&__block {
 			text-align: center;
 			margin: 0;
+			padding-bottom: 25px;
 		}
 		&__operator {
 			display: none;
@@ -94,6 +95,7 @@
 	}
 	.title {
 		font-size: 38px;
+		padding: 0 30px;
 	}
 	.about {
 		&__block {
@@ -104,6 +106,18 @@
 		&__price {
 			margin: 100px 0 72px 0;
 			text-align: center;
+			&._marg {
+				margin: 0 0% 50px 0px;
+			}
+		}
+		&__name {
+			margin: 0 auto;
+		}
+		&__text {
+			&._height {
+				line-height: 32px;
+				margin: -6px 0 80px 0;
+			}
 		}
 		&__img {
 			margin: 0 auto 10px auto;
@@ -145,6 +159,26 @@
 			}
 		}
 	}
+	.blockquote {
+		&__text {
+			font-size: 22px;
+		    line-height: 30px;
+		}
+	}
+	.history {
+		&__section {
+			height: 290px;
+			margin-left: 0px;
+			margin-top: 40px;
+		}
+		&__block {
+			width: 205px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 21px;
+		}
+	}
 }
 @media (min-width: 500px) and (max-width: 767px) {
 	.footer {
@@ -165,6 +199,7 @@
 		&__section {
 			margin-top: 42px;
 			display: block;
+			padding-bottom: 50px;
 		}
 		&__list {
 			display: none;
