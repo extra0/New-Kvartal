@@ -1,5 +1,8 @@
 $(function() {
 
+	// видео
+	$('video, object').maximage('maxcover');
+
 	// плавное перемещение вниз к таблице
 	$('.button__down').click(function() {
 		var anchor = $(this);
