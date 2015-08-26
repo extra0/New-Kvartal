@@ -28,6 +28,8 @@
 		left:0;
 		 position:relative;
 		 top:0;
+		 height: auto!important;
+		 overflow: hidden;
 	}
 }
 // блок телефонов под шапкой
@@ -186,6 +188,13 @@
 }
 // блок приемуществ после шапки 
 .advantages {
+	&__section {
+		&._main {
+			position: absolute;
+			text-align: center;
+			width: 100%;
+		}
+	}
 	&__block {
 		vertical-align: top;
 		width: 19%;

@@ -2,6 +2,7 @@
 	.video {
 		&__play {
 			max-height: 327px;
+			display: none;
 			video {
 				display: none;				
 			}
@@ -23,7 +24,14 @@
 		&__content {
 			margin-top: -10px;
 			&._index {
-				margin-top: 33px;
+				margin-top: -9px;
+			}
+		}
+		&__underhead {
+			&._index {
+				position: relative;
+			    background: url(../img/bg.jpg);
+			    background-size: cover;
 			}
 		}
 	}

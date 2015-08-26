@@ -13,21 +13,6 @@ $(function() {
 
 	$('.fancy').fancybox();
 
-	// появление обьектов на карте
-	// $('.object__link').click(function() {
-	// 	if ($(this).children('img').hasClass('active')) {
-	// 		return false;
-	// 	} else {
-	// 		$('.object__inner').hide();
-	// 		$('.object__circle').attr('src', 'img/circle.png');
-	// 		$('.object__circle').removeClass('active');
-	// 		$(this).parent().find('.object__inner').fadeIn(500);
-	// 		$(this).children('img').attr('src', 'img/active_circle.png');
-	// 		$(this).children('img').addClass('active');
-	// 		return false;
-	// 	}
-	// });
-
 	// hover на блок с историей
 	$('.history__block').hover(function() {
 		$(this).toggleClass('hover');
@@ -39,6 +24,8 @@ $(function() {
 		pagerCustom: '.bx-pager__block',
 		slideWidth: 645
 	});
+
+	$('.advantages__section._main').css('top', $(window).height() / 4.5 + "%");
 
 	// показываем пикторгамку меню
 	var btn = $('.header__menu-btn');
@@ -64,6 +51,9 @@ $(function() {
 
 		// переопределение отступа для бокового меню на мобле
 		$('.mobile__menu').css('left', $(window).width());
+
+		// паддинг для блока приемуществ на главной
+		$('.advantages__section').css('top', $(window).height() / 4.5 + "%");
 	});
 
 	if ($(window).width() < 992 && $(window).width() > 767) {
@@ -73,24 +63,6 @@ $(function() {
 			return false;
 		});
 	}
-
-	// закрываем меню вне его области
-	// $(document).click(function(event) {
-	// 	if ($(event.target).closest(".mobile__menu").length) return;
-	// 	$('.mobile__menu').slideUp(500);
-	// 	indexClick = 0;
-	// 	event.stopPropagation();
-	// });
-
-	// закрываем обьекты
-	// $(document).click(function(event) {
-	// 	if ($(event.target).closest(".object__inner").length) return;
-	// 	$('.object__inner').fadeOut(500);
-	// 	$('.object__circle').attr('src', 'img/circle.png');
-	// 	$('.object__circle').removeClass('active');
-	// 	indexClick = 0;
-	// 	event.stopPropagation();
-	// });
 
 	// закрываем окно звонка
 	$(document).click(function(event) {
@@ -119,4 +91,6 @@ $(function() {
 			return false;
 		});
 	}
+
+	
 });
