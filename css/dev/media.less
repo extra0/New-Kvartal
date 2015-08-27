@@ -151,7 +151,7 @@
 		}
 	}
 	.footer {
-		padding: 32px 0 27px 0;
+		padding: 27px 0;
 		background-size: contain;
 		&__menu {
 			display: none;
@@ -328,6 +328,9 @@
 			text-align: left;
 		}
 	}
+	.button__down {
+		display: none;
+	}
 }
 @media (min-width: 500px) and (max-width: 767px) {
 	.footer {
@@ -341,7 +344,7 @@
 		    text-align: left;
 		}
 		&__item {
-			margin: 0 9px 9px 0;
+			margin: 0 9px 9px 0; 
 		}
 	}
 	.advantages {
@@ -892,6 +895,9 @@
 			min-height: 207px;
 		}
 	}
+	.mobile__menu._fixed {
+		display: none;
+	}
 }
 @media (min-width: 993px) and (max-width: 1010px) {
 	.header {
@@ -900,6 +906,13 @@
 		}
 		&__menu-btn {
 			display: none!important;
+		}
+	}
+}
+@media (max-width: 993px) {
+	.header {
+		&__menu-btn {
+			display: block;
 		}
 	}
 }

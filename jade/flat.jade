@@ -45,6 +45,10 @@ block content
 						a.flat__link(href="#")
 							p.flat__type Жилой дом
 							p.flat__name «Иртышский Берег»
+					li.flat__item
+						a.flat__link(href="#")
+							p.flat__type Жилой дом
+							p.flat__name «Иртышский Берег»
 		.estate__section
 			.container
 				p.estate__finish Дом введен <br>в эксплуатацию
@@ -58,10 +62,10 @@ block content
 				    var myMap = new ymaps.Map('estate__map', {
 				            center: [61.00152809, 69.00000838],
 				            zoom: 15,
-				            controls:[]
+				            controls:['zoomControl']
 				        });
-
-					    //- myMap.behaviors.disable('scrollZoom');
+	
+					    myMap.behaviors.disable('scrollZoom');
 						
 						//закрываем активный балун
 						myMap.events.add('click', function (e) {  
@@ -192,6 +196,9 @@ block content
 								input.order__input._name(type="text" reqiured placeholder="ваше имя")
 								span.order__text , меня интересует
 								textarea.order__message(placeholder="расскажите о квартире своей мечты" reqiured)
+								span.order__text._dot .
 								span.order__text Свяжитесь со мной по телефону :
 								input.order__input._phone.mask(type="text" reqiured placeholder="номер телефона")
-								button.phone__submit._order(type="submit") Отправить
+								span.order__text._dot .
+								.phone__submit-wrap
+									button.phone__submit._order(type="submit") Отправить

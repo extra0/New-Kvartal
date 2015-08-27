@@ -1,10 +1,12 @@
 .main {
 	&__underhead {
+		margin-bottom: 13px;
 		&._index {
 			position: absolute;
 			top: 0;
 			left: 0;
 			right: 0;
+			margin-bottom: 0;
 			.container {
 				height: 95vh;
 			}
@@ -46,7 +48,6 @@
 	&__block {
 		margin: 19px 0 22px 21.6%;
 		position: relative;
-		z-index: 2;
 	}
 	&__operator {
 		max-width: 51px;
@@ -107,7 +108,7 @@
 		width: 290px;
 		padding: 20px;
 		box-sizing: border-box;
-		z-index: 10;
+		z-index: 100;
 		top: 60px;
 		left: -70px;
 		background: #f6f7ef url(../img/phone.png) 20px 25px no-repeat;
@@ -120,6 +121,7 @@
 		    border-right: 10px solid transparent;
 		    border-bottom: 15px solid #f6f7ef;
 		    top: -14px;
+		    z-index: 21313;
 		    left: 137px;
 		}
 	}
@@ -147,7 +149,7 @@
 		}
 	}
 	&__submit {
-		background: #5687be;
+		background: #3088C1;
 		border: none;
 		border-radius: 6px;
 		border-bottom: 3px solid #275180;
@@ -168,7 +170,7 @@
 			margin-top: 20px;
 		}
 		&:hover {
-			background: darken(#5687be, 5%);
+			background: darken(#5687be, 10%);
 		}
 		&:active {
 			top: 3px;
@@ -250,15 +252,6 @@
 		position: relative;
 		padding-top: 38px;
 		background: #fff;
-		// &:before {
-		// 	content: '';
-		// 	position: absolute;
-		// 	top: -5px;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 5px;
-		// 	background-color: #fff;
-		// }
 	}
 	&__map {
 		position: relative;
@@ -531,7 +524,7 @@
 // блок цитаты на странице о компании
 .blockquote {
 	&__section {
-		background: url(../img/blue_bg.jpg) 0 0 no-repeat;
+		background: url(../img/blue_bg.jpg) top center no-repeat fixed;
 		background-size: cover;
 		padding: 44px 0 47px 0;
 	}
@@ -549,19 +542,19 @@
 		height: 440px;
 		overflow: hidden;
 		text-align: center;
-		margin-left: -100px;
 		margin-top: 137px;
 	}
 	&__wrap {
-		width: 20000px;
+		// width: 20000px;
 	}
 	&__block {
 		text-align: left;
 		vertical-align: top;
-		float: left;
-		width: 263px;
+		// float: left;
+		width: 270px;
+		margin-left: -4px;
 		height: 440px;
-		display: inline-block;
+		display: inline-table;
 		background: #080581;
 		box-sizing: border-box;
 		padding: 30px 12px 30px 37px;
@@ -580,6 +573,7 @@
 			top: 0;
 			left: 0;
 			z-index: 2;
+			opacity: 1;
 			-webkit-transition: all 0.4s ease;
 			-moz-transition: all 0.4s ease;
 			-ms-transition: all 0.4s ease;
@@ -588,7 +582,12 @@
 		}
 		&.hover {
 			&:before {
-				top: 100%;
+				opacity: 0;
+				-webkit-transition: all 0.4s ease;
+				-moz-transition: all 0.4s ease;
+				-ms-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
 			}
 		}
 	}
@@ -623,6 +622,8 @@
 	&__section {
 		text-align: center;
 		margin-bottom: 50px;
+		position: relative;
+		z-index: 2;
 	}
 	&__shadow {
 		position: absolute;
@@ -739,7 +740,7 @@
 // блок с картой
 .map {
 	&__block {
-		margin-top: -135px;
+		margin-top: -98px;
 		width: 100%;
 		position: relative;
 		height: 662px;
@@ -892,14 +893,35 @@
 	}
 	&__text {
 		text-align: center;
-		margin: 20px 0 32px 0;
+		margin: 25px 0 32px 0;
 		font-size: 20px;
 		letter-spacing: 1px;
 	}
 	&__objects {
 		background: url(../img/wave.png) repeat-x;
-		padding-bottom: 80px;
+		padding-bottom: 30px;
 		margin-bottom: 5px;
+		min-height: 240px;
+		&:hover {
+			-webkit-animation: rotate 20s infinite linear; 
+		    animation: rotate 20s infinite linear;
+			@-webkit-keyframes rotate {
+				0% {
+					background-position: 0px 0px;
+				}
+				100% {
+					background-position: -1000px 0px;
+				}
+			}
+			@keyframes rotate {
+				0% {
+					background-position: 0px 0px;
+				}
+				100% {
+					background-position: -1000px 0px;
+				}
+			}
+		}
 	}
 	&__list {
 		text-align: center;
@@ -915,6 +937,7 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff1e3', endColorstr='#f6f7ef',GradientType=0 ); /* IE6-9 */
 		position: relative;
 		display: block;
+		vertical-align: top;
 		box-sizing: border-box;
 		padding: 13px 28px;
 		min-width: 243px;
@@ -942,7 +965,7 @@
 	}
 	&__item {
 		text-align: left;
-		margin: 0 12px;
+		margin: 0 12px 38px 12px;
 	}
 	&__type {
 		color: #323232;
@@ -1188,7 +1211,7 @@
 // окно заявки
 #order{
 	background: #f6f7ef;
-	padding: 32px 40px;
+	padding: 25px 40px 41px 40px;
 	border-radius: 5px;
 	display: none;
 }
@@ -1207,10 +1230,14 @@
 	&__text {
 		font-size: 16px;
 		margin: 0 0 15px;
+		line-height: 24px;
 		color: #161616;
+		&._dot {
+			display: inline-block;
+		}
 	}
 	&__form {
-		max-width: 490px;
+		max-width: 500px;
 	}
 	&__input {
 		border: 1px solid #bdbdbd;
@@ -1230,11 +1257,22 @@
 	}
 	&__message {
 		resize: none;
+		border: 1px solid #bdbdbd;
+		-webkit-box-shadow: inset 1px 12px 8px -11px #bdbdbd;
 		box-shadow: inset 1px 12px 8px -11px #bdbdbd;
-		width: 99%;
+		width: 485px;
 		height: 78px;
-		margin-bottom: 10px;
+		margin-bottom: -5px;
 		box-sizing: border-box;
 		padding: 10px;
+		margin-right: 5px;
 	}
+}
+// враппер
+.window_wrap {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
 }

@@ -14,9 +14,9 @@
   <body>
     <div class="main-wrapper">
       <header class="header">
-        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a><a href="#" class="header__menu-btn"></a>
+        <div class="container"><a href="/" class="header__logo"><img src="img/logo.png" alt="Site Logo"></a><a href="javascript:void(0)" class="header__menu-btn"></a>
           <ul class="mobile__menu list-inline">
-            <li class="mobile__menu-item"><a href="#" class="mobile__menu-link">О компании</a></li>
+            <li class="mobile__menu-item"><a href="#" class="mobile__menu-link active">О компании</a></li>
             <li class="mobile__menu-item"><a href="#" class="mobile__menu-link">Наши объекты</a></li>
             <li class="mobile__menu-item"><a href="#" class="mobile__menu-link">услуги</a></li>
             <li class="mobile__menu-item"><a href="#" class="mobile__menu-link">Соц.партнерство</a></li>
@@ -25,7 +25,7 @@
             <li class="mobile__menu-item"><a href="#" class="mobile__menu-link">Контакты</a></li>
           </ul>
           <ul class="header__menu list-inline">
-            <li class="header__menu-item"><a href="#" class="header__menu-link">О компании</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link active">О компании</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-link">Наши объекты</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-link">услуги</a></li>
             <li class="header__menu-item"><a href="#" class="header__menu-link">Соц.партнерство</a></li>
@@ -82,6 +82,9 @@
               <li class="flat__item"><a href="#" class="flat__link">
                   <p class="flat__type">Жилой дом</p>
                   <p class="flat__name">«Иртышский Берег»</p></a></li>
+              <li class="flat__item"><a href="#" class="flat__link">
+                  <p class="flat__type">Жилой дом</p>
+                  <p class="flat__name">«Иртышский Берег»</p></a></li>
             </ul>
           </div>
         </div>
@@ -97,10 +100,10 @@
                 var myMap = new ymaps.Map('estate__map', {
                         center: [61.00152809, 69.00000838],
                         zoom: 15,
-                        controls:[]
+                        controls:['zoomControl']
                     });
             
-            	    //- myMap.behaviors.disable('scrollZoom');
+            	    myMap.behaviors.disable('scrollZoom');
             		
             		//закрываем активный балун
             		myMap.events.add('click', function (e) {  
@@ -217,9 +220,11 @@
                   <form action="#" method="post" class="order__form">
                     <p class="order__text">Мы подберем подходящие вам варианты и перезвоним в ближайшее время.</p><span class="order__text">Меня зовут</span>
                     <input type="text" reqiured placeholder="ваше имя" class="order__input _name"><span class="order__text">, меня интересует</span>
-                    <textarea placeholder="расскажите о квартире своей мечты" reqiured class="order__message"></textarea><span class="order__text">Свяжитесь со мной по телефону :</span>
-                    <input type="text" reqiured placeholder="номер телефона" class="order__input _phone mask">
-                    <button type="submit" class="phone__submit _order">Отправить</button>
+                    <textarea placeholder="расскажите о квартире своей мечты" reqiured class="order__message"></textarea><span class="order__text _dot">.</span><span class="order__text">Свяжитесь со мной по телефону :</span>
+                    <input type="text" reqiured placeholder="номер телефона" class="order__input _phone mask"><span class="order__text _dot">.</span>
+                    <div class="phone__submit-wrap">
+                      <button type="submit" class="phone__submit _order">Отправить</button>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -264,11 +269,6 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
-    <!-- подключить на странцие галереи-->
-    <script src="js/gallery_plugin.js"></script>
-    <!-- ==============================-->
-    <!-- подключить на странцие с видео на главной-->
-    <!-- ==============================-->
     <script src="js/script.js"></script>
   </body>
 </html>
