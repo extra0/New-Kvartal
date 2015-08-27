@@ -2,10 +2,11 @@ extends _layout
 block content
 	.main__content._index
 		.full__screen
-			video.video__play(loop autoplay)
-				source(src="video/video2.mp4" type="video/mp4")
-				source(src="video/video2.webm" type="video/webm")
-				source(src="video/video2.ogg" type="video/ogg")
+			.video__wrap
+				video.video__play(loop autoplay)
+					source(src="video/video2.mp4" type="video/mp4")
+					source(src="video/video2.webm" type="video/webm")
+					source(src="video/video2.ogg" type="video/ogg")
 		.main__underhead._index
 			.container
 					.row
@@ -45,9 +46,9 @@ block content
 							li.advantages__block
 								img.advantages__img(src="img/head_img5.png", alt="")
 								p.advantages__text Забота о вас<br>и ваших близких
-						.text-center
-							a.button__down(href="#object")
-								img(src="img/mouse.png", alt="")
+					.text-center
+						a.button__down(href="#object")
+							img(src="img/mouse.png", alt="")
 		.object__block#object
 			.container
 				h2.title Объекты компании

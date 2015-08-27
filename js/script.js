@@ -25,8 +25,6 @@ $(function() {
 		slideWidth: 645
 	});
 
-	$('.advantages__section._main').css('top', $(window).height() / 4.5 + "%");
-
 	// показываем пикторгамку меню
 	var btn = $('.header__menu-btn');
 	if ($(window).width() < 992) {
@@ -52,8 +50,6 @@ $(function() {
 		// переопределение отступа для бокового меню на мобле
 		$('.mobile__menu').css('left', $(window).width());
 
-		// паддинг для блока приемуществ на главной
-		$('.advantages__section').css('top', $(window).height() / 4.5 + "%");
 	});
 
 	if ($(window).width() < 992 && $(window).width() > 767) {
@@ -87,7 +83,6 @@ $(function() {
 		$('.header__menu-btn').click(function(){
 			$('.main-wrapper').toggleClass('_fixed');
 			$('.video__play').toggleClass('ml');
-			// $('body').toggleClass('_fixed');
 			return false;
 		});
 	}
