@@ -70,38 +70,22 @@ $(function() {
 
 	$('.mask').mask('+9 (999) 999-99-99');
 
-	var btn = $('.header__menu-btn');
-	$(window).resize(function() {
-		console.log('22');
-		if ($(this).width < 992 && $(this).width > 768) {
-			console.log('mid');
-			btn.addClass('slide');
-			btn.removeClass('_fixed');
-		} else if ($(this).width < 768) {
-			console.log('small');
-			btn.addClass('_fixed');
-			btn.removeClass('slide');
-			$('.mobile__menu').css('left', $(window).width());
-		}
-
+	$('.mobile__menu._fixed').css('left', $(window).width());
+	$(window).resize(function(){
+		$('.mobile__menu._fixed').css('left', $(window).width());
 	});
 
-	// if ($('body').width() < 992 && $('body').width() > 767) {
-	// 	// показываем/скрываем меню
-	// 	btn.click(function(){
-	// 		$('.mobile__menu').slideToggle(500);
-	// 		return false;
-	// 	});
-	// }
+	var slide = $('.header__menu-btn._slide'),
+		fix = $('.header__menu-btn._fix')
 
-	// меню на мобле до 768 точек
-	if ($(window).width() < 768) {
-		$('.mobile__menu').addClass('_fixed');
-		$('.mobile__menu').css('left', $(window).width());
-		$('.header__menu-btn').click(function() {
-			$('.main-wrapper').toggleClass('_fixed');
-			$('.video__play').toggleClass('ml');
-			return false;
-		});
-	}
+	slide.click(function() {
+		$('.mobile__menu._slide').slideToggle(500);
+	});
+
+	fix.click(function() {
+		$('.mobile__menu._fixed').css('left', $(window).width());
+		$('.main-wrapper').toggleClass('_fixed');
+		$('.video__play').toggleClass('ml');
+	});
+
 });

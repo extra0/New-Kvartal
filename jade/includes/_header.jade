@@ -2,8 +2,24 @@ header.header
 	.container
 		a.header__logo(href="/")
 			img(src="img/logo.png" alt="Site Logo")
-		a.header__menu-btn(href="javascript:void(0)")
-		ul.mobile__menu.list-inline
+		a.header__menu-btn._fix(href="javascript:void(0)")
+		a.header__menu-btn._slide(href="javascript:void(0)")
+		ul.mobile__menu._fixed.list-inline
+			li.mobile__menu-item
+				a.mobile__menu-link.active(href="#") О компании
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") Наши объекты
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") услуги
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") Соц.партнерство
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") Фотогалерея
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") Спец.предложения
+			li.mobile__menu-item
+				a.mobile__menu-link(href="#") Контакты
+		ul.mobile__menu._slide.list-inline
 			li.mobile__menu-item
 				a.mobile__menu-link.active(href="#") О компании
 			li.mobile__menu-item
