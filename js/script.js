@@ -1,28 +1,28 @@
-$(function() {
+// $(function() {
 
-	var GammaSettings = {
-		// order is important!
-		viewport: [{
-			width: 1200,
-			columns: 5
-		}, {
-			width: 900,
-			columns: 4
-		}, {
-			width: 500,
-			columns: 3
-		}, {
-			width: 320,
-			columns: 2
-		}, {
-			width: 0,
-			columns: 2
-		}]
-	};
+// 	var GammaSettings = {
+// 		// order is important!
+// 		viewport: [{
+// 			width: 1200,
+// 			columns: 5
+// 		}, {
+// 			width: 900,
+// 			columns: 4
+// 		}, {
+// 			width: 500,
+// 			columns: 3
+// 		}, {
+// 			width: 320,
+// 			columns: 2
+// 		}, {
+// 			width: 0,
+// 			columns: 2
+// 		}]
+// 	};
 
-	Gamma.init(GammaSettings);
+// 	Gamma.init(GammaSettings);
 
-});
+// });
 $(function() {
 
 
@@ -72,6 +72,7 @@ $(function() {
 
 	var btn = $('.header__menu-btn');
 	$(window).resize(function() {
+		console.log('22');
 		if ($(this).width < 992 && $(this).width > 768) {
 			console.log('mid');
 			btn.addClass('slide');
